@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shreyas Training Institute | Digital Marketing</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8f7;
+    color:#102a2a;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#063b35;
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:620px;
+    padding:80px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    background:
+    linear-gradient(
+        135deg,
+        #063b35 0%,
+        #075e54 45%,
+        #075985 100%
+    );
+
+    color:white;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.badge{
+    display:inline-block;
+    background:#38bdf8;
+    color:#062f3f;
+    padding:9px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:54px;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.7;
+    color:#e0f2f1;
+    margin-bottom:25px;
+}
+
+.location{
+    font-size:17px;
+    margin-bottom:30px;
+}
+
+.buttons a{
+    display:inline-block;
+    padding:15px 25px;
+    margin-right:10px;
+    margin-bottom:10px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.call{
+    background:#38bdf8;
+    color:#052f3c;
+}
+
+.whatsapp{
+    background:#22c55e;
+    color:white;
+}
+
+.hero-icon{
+    font-size:170px;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:75px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:#063b35;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* ================= COURSES ================= */
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.course{
+    background:white;
+    padding:32px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    border-top:5px solid #075985;
+    transition:0.3s;
+}
+
+.course:hover{
+    transform:translateY(-8px);
+}
+
+.course-icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.course h3{
+    font-size:21px;
+    margin-bottom:12px;
+    color:#063b35;
+}
+
+.course p{
+    color:#64748b;
+    line-height:1.6;
+}
+
+/* ================= FACULTY ================= */
+
+.faculty-section{
+    background:#e8f4f2;
+}
+
+.faculty{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.faculty-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.faculty-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#075985,#063b35);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.faculty-card h3{
+    color:#063b35;
+    margin-bottom:8px;
+}
+
+.faculty-card p{
+    color:#64748b;
+}
+
+/* ================= WHY US ================= */
+
+.why{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    background:#063b35;
+    color:white;
+    padding:30px 20px;
+    border-radius:14px;
+    text-align:center;
+}
+
+.why-card .icon{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.why-card h3{
+    margin-bottom:8px;
+}
+
+.why-card p{
+    color:#cde8e4;
+    line-height:1.5;
+}
+
+/* ================= OUR STUDENTS ================= */
+
+.students{
+    background:
+    linear-gradient(135deg,#075985,#063b35);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.students h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.students h2 span{
+    color:#38bdf8;
+}
+
+.students p{
+    font-size:20px;
+    color:#d8f3ef;
+    margin-bottom:25px;
+}
+
+/* ================= EDUCATION ================= */
+
+.education{
+    text-align:center;
+    background:white;
+}
+
+.education h2{
+    font-size:40px;
+    color:#063b35;
+    margin-bottom:15px;
+}
+
+.education h2 span{
+    color:#075985;
+}
+
+.education p{
+    max-width:750px;
+    margin:auto;
+    color:#64748b;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#063b35;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:36px;
+    margin-bottom:25px;
+}
+
+.contact p{
+    font-size:18px;
+    margin:12px;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#021f1c;
+    color:#a7c8c4;
+    text-align:center;
+    padding:25px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:62px;
+    height:62px;
+    background:#22c55e;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    z-index:2000;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:65px 6%;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero-icon{
+        font-size:110px;
+        margin-top:35px;
+    }
+
+    .courses{
+        grid-template-columns:1fr;
+    }
+
+    .faculty{
+        grid-template-columns:1fr;
+    }
+
+    .why{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+
+    .logo{
+        font-size:19px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .buttons a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .why{
+        grid-template-columns:1fr;
+    }
+
+    .students h2{
+        font-size:32px;
+    }
+
+    .education h2{
+        font-size:30px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        Shreyas <span>Training Institute</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            🎓 Digital Marketing Training
+        </div>
+
+        <h1>
+            Build Your
+            <span>Digital Career</span>
+            With Us
+        </h1>
+
+        <p>
+            Welcome to Shreyas Training Institute.
+            Learn practical Digital Marketing skills
+            with experienced faculty and career-focused
+            training.
+        </p>
+
+        <div class="location">
+            📍 Near Sanjay Nagar, Bengaluru
+        </div>
+
+        <div class="buttons">
+
+            <a href="tel:8088285367" class="call">
+                📞 Call 8088285367
+            </a>
+
+            <a href="https://wa.me/918088285367"
+               class="whatsapp"
+               target="_blank">
+                💬 WhatsApp Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-icon">
+        📈
+    </div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section id="courses">
+
+    <div class="section-title">
+
+        <h2>Our Digital Marketing Courses</h2>
+
+        <p>
+            Learn practical skills for today's digital industry
+        </p>
+
+    </div>
+
+
+    <div class="courses">
+
+        <div class="course">
+
+            <div class="course-icon">📱</div>
+
+            <h3>Social Media Marketing</h3>
+
+            <p>
+                Learn Instagram, Facebook,
+                content strategy and social media
+                advertising.
+            </p>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-icon">🔎</div>
+
+            <h3>SEO</h3>
+
+            <p>
+                Learn search engine optimization,
+                keywords, on-page SEO and
+                Google search strategies.
+            </p>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-icon">🎯</div>
+
+            <h3>Google Ads</h3>
+
+            <p>
+                Learn Search Ads, Display Ads,
+                keywords, campaigns and
+                performance tracking.
+            </p>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-icon">📊</div>
+
+            <h3>Google Analytics</h3>
+
+            <p>
+                Understand website traffic,
+                conversions, reports and
+                marketing performance.
+            </p>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-icon">✍️</div>
+
+            <h3>Content Marketing</h3>
+
+            <p>
+                Learn content planning,
+                copywriting and digital
+                content strategies.
+            </p>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-icon">💼</div>
+
+            <h3>Career Training</h3>
+
+            <p>
+                Resume preparation, interview
+                preparation and practical
+                digital marketing projects.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FACULTY ================= -->
+
+<section class="faculty-section" id="faculty">
+
+    <div class="section-title">
+
+        <h2>Our Faculty</h2>
+
+        <p>
+            Learn with dedicated and experienced faculty
+        </p>
+
+    </div>
+
+
+    <div class="faculty">
+
+        <div class="faculty-card">
+
+            <div class="faculty-icon">
+                👨‍🏫
+            </div>
+
+            <h3>Digital Marketing Faculty</h3>
+
+            <p>
+                Practical training with
+                industry-focused learning.
+            </p>
+
+        </div>
+
+
+        <div class="faculty-card">
+
+            <div class="faculty-icon">
+                👩‍🏫
+            </div>
+
+            <h3>SEO Faculty</h3>
+
+            <p>
+                Learn SEO concepts through
+                practical examples and projects.
+            </p>
+
+        </div>
+
+
+        <div class="faculty-card">
+
+            <div class="faculty-icon">
+                👨‍💻
+            </div>
+
+            <h3>Ads & Analytics Faculty</h3>
+
+            <p>
+                Learn paid advertising,
+                analytics and campaign optimization.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>Why Choose Shreyas Training Institute?</h2>
+
+        <p>
+            Focused on practical learning and career development
+        </p>
+
+    </div>
+
+
+    <div class="why">
+
+        <div class="why-card">
+            <div class="icon">👨‍🏫</div>
+            <h3>Best Faculty Support</h3>
+            <p>
+                Guidance throughout your learning journey.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="icon">💻</div>
+            <h3>Practical Training</h3>
+            <p>
+                Learn through practical exercises and projects.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="icon">📜</div>
+            <h3>Career Focus</h3>
+            <p>
+                Build skills useful for digital marketing jobs.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="icon">🎯</div>
+            <h3>Student Support</h3>
+            <p>
+                Continuous guidance for students.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STUDENTS ================= -->
+
+<section class="students">
+
+    <h2>
+        Our Students,
+        <span>Our Pride</span>
+    </h2>
+
+    <p>
+        Every student's growth is our achievement.
+    </p>
+
+    <a href="tel:8088285367"
+       class="call"
+       style="display:inline-block;
+              padding:15px 28px;
+              border-radius:8px;
+              text-decoration:none;
+              font-weight:bold;">
+        Join Us Today
+    </a>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education">
+
+    <h2>
+        <span>Education</span> Is Our Right
+    </h2>
+
+    <p>
+        We believe quality education should help every
+        learner build confidence, develop practical skills
+        and create better career opportunities.
+    </p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Shreyas Training Institute</h2>
+
+    <p>
+        🎓 Digital Marketing Training
+    </p>
+
+    <p>
+        📍 Near Sanjay Nagar, Bengaluru
+    </p>
+
+    <p>
+        📞
+        <a href="tel:8088285367">
+            8088285367
+        </a>
+    </p>
+
+    <p>
+        💬
+        <a href="https://wa.me/918088285367"
+           target="_blank">
+            Chat on WhatsApp
+        </a>
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026 Shreyas Training Institute |
+    Digital Marketing Training |
+    Sanjay Nagar, Bengaluru
+
+</footer>
+
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a href="https://wa.me/918088285367"
+   class="whatsapp-float"
+   target="_blank">
+
+    💬
+
+</a>
+
+
+</body>
+</html>
