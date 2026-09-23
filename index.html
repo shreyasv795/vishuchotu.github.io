@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 | ಬೆಂಗಳೂರು</title>
+    <title>Shreyas Fitness | Train Hard. Stay Strong.</title>
 
     <style>
 
@@ -20,38 +19,35 @@
         }
 
         body {
-            background: #fff8e8;
-            color: #222;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            background: linear-gradient(
-                90deg,
-                #d71920,
-                #f5c400
-            );
-
-            padding: 18px 8%;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
+            background: #0b0b0b;
             color: white;
         }
 
+        /* NAVBAR */
+
+        nav {
+            background: #080808;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #292929;
+        }
+
         .logo {
-            font-size: 25px;
+            font-size: 28px;
             font-weight: bold;
+            color: #ff2b2b;
+        }
+
+        .logo span {
+            color: white;
         }
 
         nav ul {
-            list-style: none;
-
             display: flex;
-            gap: 25px;
+            list-style: none;
+            gap: 28px;
         }
 
         nav ul li a {
@@ -61,337 +57,360 @@
         }
 
         nav ul li a:hover {
-            color: #222;
+            color: #ff2b2b;
         }
+
+        .nav-btn {
+            background: #ff2b2b;
+            color: white;
+            padding: 11px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
 
         /* HERO */
 
         .hero {
-
-            min-height: 600px;
+            min-height: 650px;
 
             display: flex;
             align-items: center;
-            justify-content: center;
 
-            text-align: center;
-
-            padding: 60px 8%;
-
-            color: white;
+            padding: 80px 8%;
 
             background:
                 linear-gradient(
-                    rgba(160, 0, 0, 0.80),
-                    rgba(220, 150, 0, 0.80)
+                    90deg,
+                    rgba(0,0,0,0.95),
+                    rgba(0,0,0,0.65)
                 ),
-                url("https://images.unsplash.com/photo-1532375810709-75b1da00537c")
+                url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e")
                 center/cover;
         }
 
         .hero-content {
-            max-width: 850px;
-        }
-
-        .flag {
-            font-size: 70px;
-            margin-bottom: 20px;
+            max-width: 700px;
         }
 
         .hero h1 {
-            font-size: 55px;
-            margin-bottom: 15px;
+            font-size: 65px;
+            line-height: 1.05;
+            margin-bottom: 20px;
         }
 
-        .hero h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
+        .hero h1 span {
+            color: #ff2b2b;
         }
 
         .hero p {
+            color: #ddd;
             font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background: #ff2b2b;
+            color: white;
+            padding: 16px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .hero-btn:hover {
+            background: white;
+            color: #111;
+        }
+
+        .outline-btn {
+            display: inline-block;
+            border: 2px solid white;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+
+        /* GENERAL SECTION */
+
+        .section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #ff2b2b;
+        }
+
+        .section-description {
+            color: #aaa;
+            max-width: 700px;
+            margin: auto;
             line-height: 1.7;
         }
 
-        .hero-button {
 
-            display: inline-block;
+        /* TRAINING */
 
-            margin-top: 30px;
-
-            background: white;
-            color: #c5161d;
-
-            padding: 15px 30px;
-
-            border-radius: 30px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            font-size: 18px;
-        }
-
-        .hero-button:hover {
-            background: #222;
-            color: white;
-        }
-
-        /* EVENT INFO */
-
-        .section {
-            padding: 70px 8%;
-            text-align: center;
-        }
-
-        .section h2 {
-            color: #c5161d;
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .intro {
-            max-width: 800px;
-            margin: auto;
-            color: #555;
-            line-height: 1.8;
-            font-size: 18px;
-        }
-
-        /* EVENT CARDS */
-
-        .event-cards {
-
-            margin-top: 40px;
-
+        .training {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 25px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+            margin-top: 45px;
         }
 
-        .event-card {
-
-            background: white;
-
-            padding: 35px 25px;
-
-            border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px
-                rgba(0,0,0,0.10);
-
+        .training-card {
+            background: #151515;
+            padding: 35px 20px;
+            border-radius: 10px;
+            border: 1px solid #292929;
             transition: 0.3s;
         }
 
-        .event-card:hover {
+        .training-card:hover {
             transform: translateY(-8px);
+            border-color: #ff2b2b;
         }
 
-        .event-icon {
-            font-size: 50px;
+        .training-icon {
+            font-size: 45px;
+            margin-bottom: 18px;
+        }
+
+        .training-card h3 {
+            margin-bottom: 12px;
+            color: #ff4040;
+        }
+
+        .training-card p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+
+        /* PRICING */
+
+        .pricing-section {
+            background: #111;
+        }
+
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .price-card {
+            background: #181818;
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            position: relative;
+        }
+
+        .price-card.popular {
+            border: 2px solid #ff2b2b;
+            transform: scale(1.04);
+        }
+
+        .popular-label {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff2b2b;
+            padding: 7px 20px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .price-card h3 {
+            font-size: 25px;
             margin-bottom: 15px;
         }
 
-        .event-card h3 {
-            color: #c5161d;
-            margin-bottom: 12px;
-        }
-
-        .event-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* EVENT DETAILS */
-
-        .details {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #c5161d,
-                    #e8ad00
-                );
-
-            color: white;
-
-            padding: 70px 8%;
-
-            text-align: center;
-        }
-
-        .details h2 {
-            font-size: 38px;
-            margin-bottom: 35px;
-        }
-
-        .detail-boxes {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 25px;
-        }
-
-        .detail-box {
-
-            background: rgba(255,255,255,0.15);
-
-            padding: 30px;
-
-            border-radius: 15px;
-
-            border: 1px solid
-                rgba(255,255,255,0.3);
-        }
-
-        .detail-box h3 {
-            margin-bottom: 12px;
-            font-size: 22px;
-        }
-
-        .detail-box p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* CULTURAL PROGRAM */
-
-        .program {
-
-            padding: 70px 8%;
-
-            background: white;
-
-            text-align: center;
-        }
-
-        .program h2 {
-
-            color: #c5161d;
-
-            font-size: 38px;
-
-            margin-bottom: 35px;
-        }
-
-        .program-list {
-
-            max-width: 800px;
-
-            margin: auto;
-
-            text-align: left;
-        }
-
-        .program-item {
-
-            padding: 18px;
-
-            margin: 12px 0;
-
-            background: #fff4cf;
-
-            border-left:
-                6px solid #d71920;
-
-            border-radius: 5px;
-
-            font-size: 18px;
-        }
-
-        /* WELCOME */
-
-        .welcome {
-
-            padding: 80px 8%;
-
-            text-align: center;
-
-            background: #fff3c4;
-        }
-
-        .welcome h2 {
-
-            color: #c5161d;
-
+        .price {
             font-size: 42px;
+            font-weight: bold;
+            color: #ff2b2b;
+            margin-bottom: 25px;
+        }
 
+        .price span {
+            font-size: 15px;
+            color: #aaa;
+        }
+
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            line-height: 2.2;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .price-card li::before {
+            content: "✓ ";
+            color: #ff2b2b;
+            font-weight: bold;
+        }
+
+        .price-btn {
+            display: block;
+            background: #ff2b2b;
+            color: white;
+            text-decoration: none;
+            padding: 13px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+
+        /* BENEFITS */
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .benefit {
+            background: #151515;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+
+        .benefit-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .benefit h3 {
+            margin-bottom: 10px;
+            color: #ff4040;
+        }
+
+        .benefit p {
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+
+        /* TRAINERS */
+
+        .trainers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .trainer {
+            background: #151515;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .trainer-image {
+            width: 130px;
+            height: 130px;
+            margin: auto;
+            border-radius: 50%;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
             margin-bottom: 20px;
         }
 
-        .welcome p {
-
-            max-width: 850px;
-
-            margin: auto;
-
-            font-size: 20px;
-
-            line-height: 1.8;
+        .trainer h3 {
+            margin-bottom: 8px;
         }
 
-        .join-button {
+        .trainer p {
+            color: #ff4040;
+        }
 
+
+        /* CTA */
+
+        .cta {
+            padding: 80px 8%;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(180,0,0,0.85),
+                    rgba(80,0,0,0.9)
+                ),
+                url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48")
+                center/cover;
+        }
+
+        .cta h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
             display: inline-block;
-
-            margin-top: 30px;
-
-            background: #c5161d;
-
-            color: white;
-
-            padding: 16px 35px;
-
-            border-radius: 30px;
-
+            background: white;
+            color: #111;
+            padding: 15px 30px;
             text-decoration: none;
-
+            border-radius: 5px;
             font-weight: bold;
-
-            font-size: 18px;
         }
 
-        .join-button:hover {
-            background: #222;
-        }
 
         /* FOOTER */
 
         footer {
-
-            background: #8e1015;
-
-            color: white;
-
+            background: #050505;
+            padding: 40px 8%;
             text-align: center;
-
-            padding: 35px;
         }
 
         footer h3 {
-            font-size: 25px;
+            color: #ff2b2b;
+            font-size: 27px;
             margin-bottom: 12px;
         }
 
         footer p {
-            margin: 8px;
+            color: #888;
+            margin: 7px;
         }
+
 
         /* MOBILE */
 
-        @media(max-width: 800px) {
+        @media(max-width: 850px) {
 
             nav {
                 flex-direction: column;
-                gap: 15px;
+                gap: 20px;
             }
 
             nav ul {
@@ -400,16 +419,37 @@
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 45px;
             }
 
-            .hero h2 {
-                font-size: 24px;
+            .training,
+            .benefits {
+                grid-template-columns: 1fr 1fr;
             }
 
-            .event-cards,
-            .detail-boxes {
+            .pricing,
+            .trainers {
                 grid-template-columns: 1fr;
+            }
+
+            .price-card.popular {
+                transform: none;
+            }
+        }
+
+        @media(max-width: 500px) {
+
+            .training,
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 60px 6%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
             }
 
         }
@@ -427,28 +467,36 @@
 <nav>
 
     <div class="logo">
-        🟡🔴 ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ
+        SHREYAS <span>FITNESS</span>
     </div>
 
     <ul>
 
         <li>
-            <a href="#home">ಮುಖಪುಟ</a>
+            <a href="#home">Home</a>
         </li>
 
         <li>
-            <a href="#event">ಕಾರ್ಯಕ್ರಮ</a>
+            <a href="#training">Training</a>
         </li>
 
         <li>
-            <a href="#program">ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ</a>
+            <a href="#plans">Membership</a>
         </li>
 
         <li>
-            <a href="#contact">ಸಂಪರ್ಕ</a>
+            <a href="#trainers">Trainers</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
         </li>
 
     </ul>
+
+    <a href="#plans" class="nav-btn">
+        JOIN NOW
+    </a>
 
 </nav>
 
@@ -459,29 +507,24 @@
 
     <div class="hero-content">
 
-        <div class="flag">
-            🟨 🟥
-        </div>
-
         <h1>
-            ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026
+            TRAIN HARD.<br>
+            <span>GET STRONG.</span><br>
+            STAY FIT.
         </h1>
 
-        <h2>
-            ಕನ್ನಡದ ಹೆಮ್ಮೆ • ಕರ್ನಾಟಕದ ಸಂಭ್ರಮ
-        </h2>
-
         <p>
-            ನಮ್ಮ ನಾಡು, ನಮ್ಮ ನುಡಿ, ನಮ್ಮ ಸಂಸ್ಕೃತಿಯ
-            ಮಹತ್ವವನ್ನು ಆಚರಿಸುವ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ
-            ಸಂಭ್ರಮಕ್ಕೆ ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಹೃತ್ಪೂರ್ವಕ ಸ್ವಾಗತ.
+            Transform your body with expert trainers,
+            structured workout programs and a supportive
+            fitness community at Shreyas Fitness.
         </p>
 
-        <a
-            href="#event"
-            class="hero-button"
-        >
-            ಕಾರ್ಯಕ್ರಮದ ವಿವರ ನೋಡಿ
+        <a href="#plans" class="hero-btn">
+            VIEW MEMBERSHIP
+        </a>
+
+        <a href="#training" class="outline-btn">
+            OUR TRAINING
         </a>
 
     </div>
@@ -489,87 +532,308 @@
 </section>
 
 
-<!-- INTRODUCTION -->
+<!-- TRAINING -->
+
+<section class="section" id="training">
+
+    <h2 class="section-title">
+        OUR <span>TRAINING</span>
+    </h2>
+
+    <p class="section-description">
+        Training programs designed for different fitness
+        goals and experience levels.
+    </p>
+
+
+    <div class="training">
+
+
+        <div class="training-card">
+
+            <div class="training-icon">
+                🏋️
+            </div>
+
+            <h3>
+                Strength Training
+            </h3>
+
+            <p>
+                Build strength, improve performance and
+                develop better lifting technique.
+            </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+            <div class="training-icon">
+                🔥
+            </div>
+
+            <h3>
+                Fat Loss
+            </h3>
+
+            <p>
+                Structured workouts designed to support
+                healthy fat loss and fitness.
+            </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+            <div class="training-icon">
+                💪
+            </div>
+
+            <h3>
+                Muscle Building
+            </h3>
+
+            <p>
+                Progressive resistance training to help
+                develop muscle and strength.
+            </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+            <div class="training-icon">
+                🧘
+            </div>
+
+            <h3>
+                Personal Training
+            </h3>
+
+            <p>
+                One-to-one coaching with workouts
+                adapted to individual goals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMBERSHIP -->
+
+<section class="section pricing-section" id="plans">
+
+    <h2 class="section-title">
+        MEMBERSHIP <span>PLANS</span>
+    </h2>
+
+    <p class="section-description">
+        Choose a membership that fits your training goals.
+    </p>
+
+
+    <div class="pricing">
+
+
+        <!-- BASIC -->
+
+        <div class="price-card">
+
+            <h3>
+                BASIC
+            </h3>
+
+            <div class="price">
+                ₹1,499
+                <span>/ month</span>
+            </div>
+
+            <ul>
+
+                <li>Gym Access</li>
+
+                <li>Cardio Equipment</li>
+
+                <li>Strength Equipment</li>
+
+                <li>Locker Facility</li>
+
+                <li>Workout Guidance</li>
+
+            </ul>
+
+            <a href="#contact" class="price-btn">
+                JOIN BASIC
+            </a>
+
+        </div>
+
+
+        <!-- PREMIUM -->
+
+        <div class="price-card popular">
+
+            <div class="popular-label">
+                MOST POPULAR
+            </div>
+
+            <h3>
+                PREMIUM
+            </h3>
+
+            <div class="price">
+                ₹2,499
+                <span>/ month</span>
+            </div>
+
+            <ul>
+
+                <li>Everything in Basic</li>
+
+                <li>Personal Trainer Support</li>
+
+                <li>Customized Workout Plan</li>
+
+                <li>Nutrition Guidance</li>
+
+                <li>Progress Tracking</li>
+
+                <li>Group Training</li>
+
+            </ul>
+
+            <a href="#contact" class="price-btn">
+                JOIN PREMIUM
+            </a>
+
+        </div>
+
+
+        <!-- ANNUAL -->
+
+        <div class="price-card">
+
+            <h3>
+                ANNUAL
+            </h3>
+
+            <div class="price">
+                ₹14,999
+                <span>/ year</span>
+            </div>
+
+            <ul>
+
+                <li>Full Gym Access</li>
+
+                <li>Personal Trainer Support</li>
+
+                <li>Customized Workout Plan</li>
+
+                <li>Nutrition Guidance</li>
+
+                <li>Progress Tracking</li>
+
+                <li>Fitness Assessment</li>
+
+            </ul>
+
+            <a href="#contact" class="price-btn">
+                JOIN ANNUAL
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFITS -->
 
 <section class="section">
 
-    <h2>
-        ಎಲ್ಲರಿಗೂ ಆತ್ಮೀಯ ಸ್ವಾಗತ
+    <h2 class="section-title">
+        MEMBERSHIP <span>BENEFITS</span>
     </h2>
 
-    <p class="intro">
 
-        ಕನ್ನಡ ನಾಡಿನ ಶ್ರೀಮಂತ ಸಂಸ್ಕೃತಿ, ಪರಂಪರೆ,
-        ಕಲೆ ಮತ್ತು ಕನ್ನಡ ಭಾಷೆಯ ವೈಭವವನ್ನು
-        ಸಂಭ್ರಮದಿಂದ ಆಚರಿಸಲು ಆಯೋಜಿಸಲಾಗಿರುವ
-        ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ
-        ನಾಡಿನ ಸಮಸ್ತ ಜನತೆಗೆ ಆತ್ಮೀಯ ಸ್ವಾಗತ.
-
-    </p>
-
-</section>
+    <div class="benefits">
 
 
-<!-- EVENT -->
+        <div class="benefit">
 
-<section class="section" id="event">
-
-    <h2>
-        ಕಾರ್ಯಕ್ರಮದ ವಿಶೇಷತೆಗಳು
-    </h2>
-
-    <div class="event-cards">
-
-
-        <div class="event-card">
-
-            <div class="event-icon">
-                🎭
+            <div class="benefit-icon">
+                🏋️
             </div>
 
             <h3>
-                ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ
+                Modern Equipment
             </h3>
 
             <p>
-                ಕರ್ನಾಟಕದ ವಿವಿಧ ಕಲೆಗಳು,
-                ನೃತ್ಯ ಮತ್ತು ಸಂಗೀತ ಕಾರ್ಯಕ್ರಮಗಳು.
+                Quality equipment for strength,
+                cardio and functional training.
             </p>
 
         </div>
 
 
-        <div class="event-card">
+        <div class="benefit">
 
-            <div class="event-icon">
-                🎵
+            <div class="benefit-icon">
+                👨‍🏫
             </div>
 
             <h3>
-                ಕನ್ನಡ ಗೀತೆಗಳು
+                Expert Trainers
             </h3>
 
             <p>
-                ಕನ್ನಡ ನಾಡು ಮತ್ತು ನುಡಿಯನ್ನು
-                ಕೊಂಡಾಡುವ ವಿಶೇಷ ಸಂಗೀತ ಕಾರ್ಯಕ್ರಮ.
+                Get guidance from trainers who
+                can help you follow your program.
             </p>
 
         </div>
 
 
-        <div class="event-card">
+        <div class="benefit">
 
-            <div class="event-icon">
-                🏆
+            <div class="benefit-icon">
+                📊
             </div>
 
             <h3>
-                ಗೌರವ ಸಮಾರಂಭ
+                Progress Tracking
             </h3>
 
             <p>
-                ಕನ್ನಡ ನಾಡಿಗೆ ಸೇವೆ ಸಲ್ಲಿಸಿದ
-                ಗಣ್ಯರನ್ನು ಗೌರವಿಸುವ ಕಾರ್ಯಕ್ರಮ.
+                Track your workouts and monitor
+                your fitness progress.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                🥗
+            </div>
+
+            <h3>
+                Nutrition Guidance
+            </h3>
+
+            <p>
+                Practical nutrition guidance to
+                support your fitness goals.
             </p>
 
         </div>
@@ -579,53 +843,64 @@
 </section>
 
 
-<!-- EVENT DETAILS -->
+<!-- TRAINERS -->
 
-<section class="details">
+<section class="section" id="trainers">
 
-    <h2>
-        ಕಾರ್ಯಕ್ರಮದ ವಿವರ
+    <h2 class="section-title">
+        MEET OUR <span>TRAINERS</span>
     </h2>
 
-    <div class="detail-boxes">
+
+    <div class="trainers">
 
 
-        <div class="detail-box">
+        <div class="trainer">
+
+            <div class="trainer-image">
+                💪
+            </div>
 
             <h3>
-                📍 ಸ್ಥಳ
+                Trainer Name
             </h3>
 
             <p>
-                ವಿಧಾನ ಸೌಧದ ಸಮೀಪ<br>
-                ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ
+                Strength & Conditioning
             </p>
 
         </div>
 
 
-        <div class="detail-box">
+        <div class="trainer">
+
+            <div class="trainer-image">
+                🏋️
+            </div>
 
             <h3>
-                📅 ದಿನಾಂಕ
+                Trainer Name
             </h3>
 
             <p>
-                1 ನವೆಂಬರ್ 2026
+                Personal Training
             </p>
 
         </div>
 
 
-        <div class="detail-box">
+        <div class="trainer">
+
+            <div class="trainer-image">
+                🔥
+            </div>
 
             <h3>
-                ⏰ ಸಮಯ
+                Trainer Name
             </h3>
 
             <p>
-                ಬೆಳಿಗ್ಗೆ 10:00 ರಿಂದ
-                ಸಂಜೆ 6:00 ರವರೆಗೆ
+                Fat Loss & Fitness
             </p>
 
         </div>
@@ -635,68 +910,23 @@
 </section>
 
 
-<!-- CULTURAL PROGRAM -->
+<!-- CTA -->
 
-<section class="program" id="program">
-
-    <h2>
-        ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು
-    </h2>
-
-    <div class="program-list">
-
-        <div class="program-item">
-            🎤 ಕನ್ನಡ ಗೀತ ಗಾಯನ
-        </div>
-
-        <div class="program-item">
-            💃 ಜನಪದ ನೃತ್ಯ
-        </div>
-
-        <div class="program-item">
-            🎭 ಸಾಂಸ್ಕೃತಿಕ ನಾಟಕ
-        </div>
-
-        <div class="program-item">
-            🎶 ಕನ್ನಡ ಸಂಗೀತ ಕಾರ್ಯಕ್ರಮ
-        </div>
-
-        <div class="program-item">
-            🏆 ವಿಶೇಷ ಗೌರವ ಸಮಾರಂಭ
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- WELCOME -->
-
-<section class="welcome">
+<section class="cta" id="contact">
 
     <h2>
-        ಬನ್ನಿ... ಕನ್ನಡದ ಹಬ್ಬವನ್ನು ಒಟ್ಟಾಗಿ ಆಚರಿಸೋಣ!
+        READY TO START?
     </h2>
 
     <p>
-
-        ಕನ್ನಡಿಗರ ಹೆಮ್ಮೆಯ ಹಬ್ಬವಾದ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವವನ್ನು
-        ನಮ್ಮೆಲ್ಲರೊಂದಿಗೆ ಸಂಭ್ರಮಿಸಲು ನಿಮ್ಮ ಕುಟುಂಬ ಮತ್ತು
-        ಸ್ನೇಹಿತರೊಂದಿಗೆ ಆಗಮಿಸಿ.
-
-        <br><br>
-
-        <strong>
-            "ಕನ್ನಡವೇ ಸತ್ಯ, ಕನ್ನಡವೇ ನಿತ್ಯ!"
-        </strong>
-
+        Your fitness journey starts today.
     </p>
 
     <a
-        href="#contact"
-        class="join-button"
+        href="https://wa.me/918088285367"
+        class="cta-btn"
     >
-        🎉 ಸಂಭ್ರಮದಲ್ಲಿ ಭಾಗವಹಿಸಿ
+        📲 BOOK A FREE TRIAL
     </a>
 
 </section>
@@ -704,22 +934,26 @@
 
 <!-- FOOTER -->
 
-<footer id="contact">
+<footer>
 
     <h3>
-        🟡🔴 ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026
+        SHREYAS FITNESS
     </h3>
 
     <p>
-        ವಿಧಾನ ಸೌಧದ ಸಮೀಪ, ಬೆಂಗಳೂರು
+        Train Hard • Stay Strong • Live Better
     </p>
 
     <p>
-        ಕರ್ನಾಟಕದ ಕಲೆ • ಸಂಸ್ಕೃತಿ • ಪರಂಪರೆ
+        📍 Bengaluru, Karnataka
     </p>
 
     <p>
-        © 2026 ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಕಾರ್ಯಕ್ರಮ
+        📞 +91 80882 85367
+    </p>
+
+    <p>
+        © 2026 Shreyas Fitness. All Rights Reserved.
     </p>
 
 </footer>
