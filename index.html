@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Ambedkar Jayanti 2026 | Karnataka
-    </title>
+    <title>Chhatrapati Shivaji Maharaj | Maharashtra</title>
 
     <style>
 
@@ -18,665 +12,403 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
-            background: #f5f5f5;
-            color: #222;
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #fff8ed;
+            color: #3b1605;
         }
 
+        /* ================= HEADER ================= */
 
-        /* =========================
-           NAVBAR
-        ========================= */
-
-        nav {
-
-            background: #071a35;
-
+        header {
+            background: linear-gradient(135deg, #8b1e05, #e85d04, #ff9d00);
             color: white;
-
-            padding: 18px 8%;
-
+            padding: 18px 7%;
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
             position: sticky;
-
             top: 0;
-
             z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .logo {
-
-            font-size: 25px;
-
-            font-weight: bold;
-
-            color: #f4c430;
-        }
-
-        nav ul {
-
             display: flex;
-
-            list-style: none;
-
-            gap: 25px;
+            align-items: center;
+            gap: 12px;
         }
 
-        nav ul li a {
+        .om {
+            font-size: 42px;
+            color: #ffe082;
+            font-weight: bold;
+        }
 
+        .logo h2 {
+            font-size: 22px;
+        }
+
+        nav a {
             color: white;
-
             text-decoration: none;
-
+            margin-left: 22px;
             font-weight: bold;
         }
 
-        nav ul li a:hover {
-
-            color: #f4c430;
+        nav a:hover {
+            color: #ffe082;
         }
 
-        .nav-button {
-
-            background: #f4c430;
-
-            color: #071a35;
-
-            padding: 10px 18px;
-
-            border-radius: 5px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
+        /* ================= HERO ================= */
 
         .hero {
-
-            min-height: 650px;
-
+            min-height: 90vh;
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             text-align: center;
-
-            padding: 70px 8%;
-
             color: white;
+            padding: 50px 20px;
 
             background:
+                linear-gradient(rgba(75, 15, 0, 0.72),
+                rgba(160, 50, 0, 0.65)),
+                url("shivaji.jpg");
 
-                linear-gradient(
-                    rgba(3, 20, 45, 0.88),
-                    rgba(7, 55, 100, 0.88)
-                ),
-
-                url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da")
-
-                center/cover;
+            background-size: cover;
+            background-position: center;
         }
 
         .hero-content {
-
             max-width: 900px;
         }
 
-        .hero-symbol {
-
-            font-size: 75px;
-
-            margin-bottom: 20px;
+        .hero .om-big {
+            font-size: 80px;
+            color: #ffd166;
+            margin-bottom: 10px;
         }
 
         .hero h1 {
-
             font-size: 58px;
-
-            margin-bottom: 15px;
-
-            color: #f4c430;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 5px black;
         }
 
         .hero h2 {
-
-            font-size: 30px;
-
-            margin-bottom: 25px;
+            font-size: 28px;
+            margin: 15px 0;
+            color: #ffe6a7;
         }
 
         .hero p {
-
             font-size: 20px;
-
-            line-height: 1.8;
-
-            color: #eeeeee;
+            line-height: 1.7;
         }
 
-        .hero-button {
-
+        .btn {
             display: inline-block;
-
             margin-top: 30px;
-
-            background: #f4c430;
-
-            color: #071a35;
-
-            padding: 16px 30px;
-
-            border-radius: 6px;
-
+            padding: 14px 30px;
+            background: #ffb000;
+            color: #4b1700;
             text-decoration: none;
-
+            border-radius: 30px;
             font-weight: bold;
-
             font-size: 18px;
+            transition: 0.3s;
         }
 
-        .hero-button:hover {
-
+        .btn:hover {
             background: white;
+            transform: scale(1.05);
         }
 
+        /* ================= COMMON ================= */
 
-        /* =========================
-           GENERAL SECTION
-        ========================= */
-
-        .section {
-
-            padding: 75px 8%;
-
-            text-align: center;
-        }
-
-        .section h2 {
-
-            font-size: 38px;
-
-            color: #071a35;
-
-            margin-bottom: 18px;
+        section {
+            padding: 70px 8%;
         }
 
         .section-title {
-
-            color: #125ca8;
+            text-align: center;
+            margin-bottom: 45px;
         }
 
-        .intro {
-
-            max-width: 850px;
-
-            margin: auto;
-
-            color: #555;
-
-            font-size: 18px;
-
-            line-height: 1.8;
+        .section-title h2 {
+            font-size: 40px;
+            color: #9e2907;
         }
 
+        .section-title p {
+            margin-top: 10px;
+            color: #70401f;
+        }
 
-        /* =========================
-           ABOUT
-        ========================= */
+        /* ================= ABOUT ================= */
 
         .about {
-
-            display: flex;
-
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
             align-items: center;
-
-            gap: 50px;
-
-            max-width: 1200px;
-
-            margin: 40px auto 0;
-
-            text-align: left;
         }
 
-        .about-image {
-
-            flex: 1;
-
-            background: #071a35;
-
-            min-height: 350px;
-
-            border-radius: 15px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            color: #f4c430;
-
-            font-size: 100px;
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+            border: 7px solid #e77716;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        .about-text {
-
-            flex: 1;
-        }
-
-        .about-text h3 {
-
-            font-size: 30px;
-
-            color: #125ca8;
-
+        .about-text h2 {
+            color: #9e2907;
+            font-size: 35px;
             margin-bottom: 18px;
         }
 
         .about-text p {
-
+            font-size: 18px;
             line-height: 1.8;
-
-            color: #555;
-
             margin-bottom: 15px;
         }
 
-
-        /* =========================
-           ACHIEVEMENTS
-        ========================= */
+        /* ================= ACHIEVEMENTS ================= */
 
         .achievements {
-
-            background: #eef4fa;
+            background: linear-gradient(#fff1dc, #fff8ed);
         }
 
-        .achievement-grid {
-
+        .cards {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
-
-            margin-top: 45px;
         }
 
-        .achievement {
-
+        .card {
             background: white;
-
-            padding: 32px 25px;
-
-            border-radius: 12px;
-
-            box-shadow:
-                0 5px 18px
-                rgba(0,0,0,0.08);
-
-            transition: 0.3s;
-
-            text-align: left;
-        }
-
-        .achievement:hover {
-
-            transform: translateY(-7px);
-        }
-
-        .achievement-icon {
-
-            font-size: 45px;
-
-            margin-bottom: 15px;
-        }
-
-        .achievement h3 {
-
-            color: #071a35;
-
-            margin-bottom: 12px;
-
-            font-size: 22px;
-        }
-
-        .achievement p {
-
-            color: #666;
-
-            line-height: 1.7;
-        }
-
-
-        /* =========================
-           EVENT DETAILS
-        ========================= */
-
-        .event-section {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #071a35,
-                    #0b4f8a
-                );
-
-            color: white;
-        }
-
-        .event-section h2 {
-
-            color: #f4c430;
-        }
-
-        .event-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 25px;
-
-            margin-top: 40px;
-        }
-
-        .event-box {
-
             padding: 30px;
-
-            background:
-                rgba(255,255,255,0.12);
-
-            border-radius: 12px;
-
-            border:
-                1px solid
-                rgba(255,255,255,0.2);
+            border-radius: 18px;
+            border-top: 6px solid #e85d04;
+            box-shadow: 0 7px 20px rgba(0,0,0,0.12);
+            transition: 0.3s;
         }
 
-        .event-box .icon {
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
 
-            font-size: 45px;
-
+        .card .icon {
+            font-size: 42px;
             margin-bottom: 15px;
         }
 
-        .event-box h3 {
-
-            margin-bottom: 10px;
-
-            color: #f4c430;
-        }
-
-        .event-box p {
-
-            line-height: 1.6;
-        }
-
-
-        /* =========================
-           PROGRAM
-        ========================= */
-
-        .program-list {
-
-            max-width: 800px;
-
-            margin: 40px auto 0;
-
-            text-align: left;
-        }
-
-        .program-item {
-
-            background: white;
-
-            padding: 20px;
-
+        .card h3 {
+            color: #a83208;
             margin-bottom: 12px;
-
-            border-left:
-                6px solid #125ca8;
-
-            border-radius: 5px;
-
-            box-shadow:
-                0 3px 10px
-                rgba(0,0,0,0.06);
-
-            font-size: 18px;
+            font-size: 23px;
         }
 
+        .card p {
+            line-height: 1.7;
+            color: #5a321d;
+        }
 
-        /* =========================
-           WELCOME SECTION
-        ========================= */
+        /* ================= INVITATION ================= */
 
-        .welcome {
+        .invitation {
+            background:
+                linear-gradient(rgba(125,30,0,0.9),
+                rgba(210,72,0,0.9)),
+                url("fort.jpg");
 
-            background: #f4c430;
-
-            color: #071a35;
-
+            background-size: cover;
+            background-position: center;
+            color: white;
             text-align: center;
-
-            padding: 75px 8%;
         }
 
-        .welcome h2 {
+        .invitation h2 {
+            font-size: 48px;
+            color: #ffd166;
+            margin-bottom: 15px;
+        }
 
-            font-size: 42px;
-
+        .invitation h3 {
+            font-size: 30px;
             margin-bottom: 20px;
         }
 
-        .welcome p {
-
-            max-width: 850px;
-
-            margin: auto;
-
-            font-size: 19px;
-
+        .invitation p {
+            font-size: 20px;
             line-height: 1.8;
         }
 
-        .welcome-button {
-
-            display: inline-block;
-
-            margin-top: 30px;
-
-            background: #071a35;
-
-            color: white;
-
-            padding: 15px 30px;
-
-            border-radius: 6px;
-
-            text-decoration: none;
-
-            font-weight: bold;
+        .event-box {
+            max-width: 800px;
+            margin: 35px auto;
+            padding: 30px;
+            border: 2px solid #ffd166;
+            border-radius: 18px;
+            background: rgba(0,0,0,0.25);
         }
 
+        .event-box div {
+            margin: 15px;
+            font-size: 20px;
+        }
 
-        /* =========================
-           FOOTER
-        ========================= */
+        /* ================= PROGRAM ================= */
+
+        .program {
+            background: #fff5e6;
+        }
+
+        .program-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .program-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-left: 7px solid #e85d04;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .program-item span {
+            font-size: 30px;
+        }
+
+        /* ================= QUOTE ================= */
+
+        .quote {
+            text-align: center;
+            background: #8b1e05;
+            color: white;
+            padding: 80px 10%;
+        }
+
+        .quote h2 {
+            font-size: 35px;
+            color: #ffd166;
+            margin-bottom: 20px;
+        }
+
+        .quote p {
+            font-size: 25px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* ================= FOOTER ================= */
 
         footer {
-
-            background: #050f20;
-
+            background: #3b1204;
             color: white;
-
             text-align: center;
-
-            padding: 40px 8%;
+            padding: 30px;
         }
 
-        footer h3 {
-
-            color: #f4c430;
-
-            font-size: 27px;
-
-            margin-bottom: 12px;
+        footer .om-footer {
+            font-size: 45px;
+            color: #ffb000;
         }
 
         footer p {
-
-            margin: 8px;
-
-            color: #ccc;
+            margin-top: 10px;
         }
 
+        /* ================= RESPONSIVE ================= */
 
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media(max-width: 850px) {
+        @media(max-width: 900px) {
 
             nav {
-
-                flex-direction: column;
-
-                gap: 18px;
-            }
-
-            nav ul {
-
-                flex-wrap: wrap;
-
-                justify-content: center;
+                display: none;
             }
 
             .hero h1 {
-
-                font-size: 40px;
+                font-size: 38px;
             }
 
             .hero h2 {
-
-                font-size: 24px;
+                font-size: 22px;
             }
 
             .about {
-
-                flex-direction: column;
+                grid-template-columns: 1fr;
             }
 
-            .achievement-grid,
-            .event-grid {
-
+            .cards {
                 grid-template-columns: 1fr;
+            }
+
+            .invitation h2 {
+                font-size: 36px;
             }
         }
 
     </style>
-
 </head>
-
 
 <body>
 
+<!-- ================= HEADER ================= -->
 
-<!-- =========================
-     NAVIGATION
-========================= -->
-
-<nav>
+<header>
 
     <div class="logo">
-        🇮🇳 AMBEDKAR JAYANTI
+
+        <div class="om">ॐ</div>
+
+        <div>
+            <h2>छत्रपती शिवाजी महाराज</h2>
+            <small>Chhatrapati Shivaji Maharaj</small>
+        </div>
+
     </div>
 
-    <ul>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#invitation">Invitation</a>
+        <a href="#program">Program</a>
+    </nav>
 
-        <li>
-            <a href="#home">Home</a>
-        </li>
-
-        <li>
-            <a href="#about">About</a>
-        </li>
-
-        <li>
-            <a href="#achievements">Achievements</a>
-        </li>
-
-        <li>
-            <a href="#event">Event</a>
-        </li>
-
-        <li>
-            <a href="#program">Programme</a>
-        </li>
-
-    </ul>
-
-    <a href="#event" class="nav-button">
-        Event Details
-    </a>
-
-</nav>
+</header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <div class="hero-symbol">
-            ⚖️
-        </div>
+        <div class="om-big">ॐ</div>
 
-        <h1>
-            Dr. B. R. Ambedkar Jayanti
-        </h1>
+        <h1>छत्रपती शिवाजी महाराज</h1>
 
-        <h2>
-            ಏಪ್ರಿಲ್ 14 — ಸಮಾನತೆ ಮತ್ತು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳ ಸ್ಮರಣೆ
-        </h2>
+        <h2>Chhatrapati Shivaji Maharaj</h2>
 
         <p>
-
-            ಭಾರತದ ಸಂವಿಧಾನದ ಕರಡು ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿದ್ದ
-            ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ ಜನ್ಮದಿನವನ್ನು
-            ಸ್ಮರಿಸುವ ಈ ವಿಶೇಷ ದಿನದಂದು ಕರ್ನಾಟಕದ
-            ಜನತೆಗೆ ಆತ್ಮೀಯ ಸ್ವಾಗತ.
-
+            The Great Maratha King • Founder of Swarajya •
+            A Symbol of Courage, Leadership and Good Governance
         </p>
 
-        <a
-            href="#event"
-            class="hero-button"
-        >
-            ಕಾರ್ಯಕ್ರಮದ ವಿವರ
+        <a href="#invitation" class="btn">
+            कार्यक्रमासाठी आमंत्रण
         </a>
 
     </div>
@@ -684,62 +416,44 @@
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ================= ABOUT ================= -->
 
-<section class="section" id="about">
+<section id="about">
 
-    <h2>
-        ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ ಬಗ್ಗೆ
-    </h2>
+    <div class="section-title">
 
-    <p class="intro">
+        <h2>About Shivaji Maharaj</h2>
 
-        ಡಾ. ಭೀಮರಾವ್ ರಾಮಜಿ ಅಂಬೇಡ್ಕರ್
-        14 ಏಪ್ರಿಲ್ 1891ರಂದು ಜನಿಸಿದರು.
-        ಅವರು ಕಾನೂನು ತಜ್ಞ, ಅರ್ಥಶಾಸ್ತ್ರಜ್ಞ,
-        ಸಮಾಜ ಸುಧಾರಕ ಮತ್ತು ಚಿಂತಕರಾಗಿದ್ದರು.
+        <p>
+            छत्रपती शिवाजी महाराजांना मानाचा मुजरा
+        </p>
 
-    </p>
+    </div>
 
 
     <div class="about">
 
-        <div class="about-image">
-            ⚖️
-        </div>
-
+        <img src="shivaji2.jpg" alt="Chhatrapati Shivaji Maharaj">
 
         <div class="about-text">
 
-            <h3>
-                ಸಮಾನತೆ ಮತ್ತು ಸಾಮಾಜಿಕ ನ್ಯಾಯದ ಹೋರಾಟಗಾರ
-            </h3>
+            <h2>छत्रपती शिवाजी महाराज</h2>
 
             <p>
-
-                ಅಂಬೇಡ್ಕರ್ ಅವರು ಸಾಮಾಜಿಕ ಅಸಮಾನತೆ ಮತ್ತು
-                ಜಾತಿ ಆಧಾರಿತ ತಾರತಮ್ಯದ ವಿರುದ್ಧ ತಮ್ಮ
-                ಜೀವನದ ಬಹುಭಾಗವನ್ನು ಹೋರಾಟಕ್ಕೆ ಸಮರ್ಪಿಸಿದರು.
-
+                Chhatrapati Shivaji Maharaj was a major Maratha ruler
+                whose leadership shaped the Maratha state and the idea
+                of Swarajya.
             </p>
 
             <p>
-
-                ಅವರು ಶಿಕ್ಷಣ, ಸಮಾನ ಹಕ್ಕುಗಳು,
-                ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಪ್ರಜಾಪ್ರಭುತ್ವದ
-                ಮೌಲ್ಯಗಳಿಗೆ ಮಹತ್ವ ನೀಡಿದರು.
-
+                He is remembered for his military leadership,
+                fort strategy, administration, naval development,
+                justice and concern for the welfare of his people.
             </p>
 
             <p>
-
-                1947ರಲ್ಲಿ ಅವರು ಸ್ವತಂತ್ರ ಭಾರತದ
-                ಮೊದಲ ಕಾನೂನು ಸಚಿವರಾದರು ಮತ್ತು
-                ಸಂವಿಧಾನದ ಕರಡು ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿ
-                ಸೇವೆ ಸಲ್ಲಿಸಿದರು.
-
+                His legacy continues to be remembered throughout
+                Maharashtra and India.
             </p>
 
         </div>
@@ -749,157 +463,108 @@
 </section>
 
 
-<!-- =========================
-     ACHIEVEMENTS
-========================= -->
+<!-- ================= ACHIEVEMENTS ================= -->
 
-<section
-    class="section achievements"
-    id="achievements"
->
+<section class="achievements" id="achievements">
 
-    <h2>
-        ಡಾ. ಅಂಬೇಡ್ಕರ್ ಅವರ ಪ್ರಮುಖ ಸಾಧನೆಗಳು
-    </h2>
+    <div class="section-title">
 
-    <p class="intro">
+        <h2>🏆 Major Achievements</h2>
 
-        ಅವರ ಜೀವನವು ಕಾನೂನು, ಅರ್ಥಶಾಸ್ತ್ರ,
-        ಶಿಕ್ಷಣ, ಸಾಮಾಜಿಕ ಸುಧಾರಣೆ ಮತ್ತು
-        ಸಾರ್ವಜನಿಕ ನೀತಿ ಸೇರಿದಂತೆ ಹಲವು ಕ್ಷೇತ್ರಗಳನ್ನು
-        ಒಳಗೊಂಡಿತ್ತು.
+        <p>शिवाजी महाराजांच्या महान कार्याला अभिवादन</p>
 
-    </p>
+    </div>
 
 
-    <div class="achievement-grid">
+    <div class="cards">
 
 
-        <div class="achievement">
+        <div class="card">
 
-            <div class="achievement-icon">
-                📜
-            </div>
+            <div class="icon">🏰</div>
 
-            <h3>
-                ಭಾರತೀಯ ಸಂವಿಧಾನ
-            </h3>
+            <h3>Fort Strategy</h3>
 
             <p>
-
-                ಸಂವಿಧಾನದ ಕರಡು ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿ
-                ಡಾ. ಅಂಬೇಡ್ಕರ್ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸಿದರು.
-                ಸಂವಿಧಾನವನ್ನು ಸಂವಿಧಾನ ಸಭೆಯು
-                26 ನವೆಂಬರ್ 1949ರಂದು ಅಂಗೀಕರಿಸಿತು.
-
+                Shivaji Maharaj developed and strengthened
+                a network of important forts across the
+                Sahyadri region. Forts played an important
+                role in the defence and administration of his state.
             </p>
 
         </div>
 
 
-        <div class="achievement">
+        <div class="card">
 
-            <div class="achievement-icon">
-                ⚖️
-            </div>
+            <div class="icon">⚔️</div>
 
-            <h3>
-                ಕಾನೂನು ಮತ್ತು ನ್ಯಾಯ
-            </h3>
+            <h3>Military Leadership</h3>
 
             <p>
-
-                ಅವರು ಸ್ವತಂತ್ರ ಭಾರತದ ಮೊದಲ
-                ಕಾನೂನು ಸಚಿವರಾಗಿದ್ದರು ಮತ್ತು
-                ಕಾನೂನು ಕ್ಷೇತ್ರದಲ್ಲಿ ಮಹತ್ವದ
-                ಕೊಡುಗೆ ನೀಡಿದರು.
-
+                He became known for strategic military
+                planning and effective use of the difficult
+                mountain terrain of the Western Ghats.
             </p>
 
         </div>
 
 
-        <div class="achievement">
+        <div class="card">
 
-            <div class="achievement-icon">
-                🎓
-            </div>
+            <div class="icon">🚢</div>
 
-            <h3>
-                ಶಿಕ್ಷಣ
-            </h3>
+            <h3>Naval Strength</h3>
 
             <p>
-
-                ಶಿಕ್ಷಣವನ್ನು ಸಾಮಾಜಿಕ ಪರಿವರ್ತನೆಯ
-                ಪ್ರಮುಖ ಸಾಧನವೆಂದು ಅವರು ಪರಿಗಣಿಸಿದರು.
-                ಹಿಂದುಳಿದ ಸಮುದಾಯಗಳ ಶಿಕ್ಷಣ ಮತ್ತು
-                ಪ್ರಗತಿಗೆ ಅವರು ಒತ್ತು ನೀಡಿದರು.
-
+                Shivaji Maharaj recognised the importance
+                of naval power and developed maritime
+                capabilities along the Konkan coast.
             </p>
 
         </div>
 
 
-        <div class="achievement">
+        <div class="card">
 
-            <div class="achievement-icon">
-                ⚖️
-            </div>
+            <div class="icon">⚖️</div>
 
-            <h3>
-                ಸಾಮಾಜಿಕ ನ್ಯಾಯ
-            </h3>
+            <h3>Good Administration</h3>
 
             <p>
-
-                ಜಾತಿ ಆಧಾರಿತ ತಾರತಮ್ಯ ಮತ್ತು
-                ಅಸ್ಪೃಶ್ಯತೆಯ ವಿರುದ್ಧ ಅವರು
-                ಸಾಮಾಜಿಕ ಚಳವಳಿಗಳನ್ನು ಮುನ್ನಡೆಸಿದರು.
-
+                His rule is remembered for organised
+                administration, governance and policies
+                focused on the functioning of the state.
             </p>
 
         </div>
 
 
-        <div class="achievement">
+        <div class="card">
 
-            <div class="achievement-icon">
-                👩
-            </div>
+            <div class="icon">🛡️</div>
 
-            <h3>
-                ಮಹಿಳಾ ಹಕ್ಕುಗಳು
-            </h3>
+            <h3>Swarajya</h3>
 
             <p>
-
-                ಮಹಿಳೆಯರ ಶಿಕ್ಷಣ ಮತ್ತು ಹಕ್ಕುಗಳ
-                ವಿಸ್ತರಣೆಗೆ ಅವರು ಸಾರ್ವಜನಿಕ ಜೀವನದಲ್ಲಿ
-                ಒತ್ತು ನೀಡಿದರು.
-
+                The idea of Swarajya became central to
+                Shivaji Maharaj's state-building vision and
+                remains an important part of his historical legacy.
             </p>
 
         </div>
 
 
-        <div class="achievement">
+        <div class="card">
 
-            <div class="achievement-icon">
-                💼
-            </div>
+            <div class="icon">👑</div>
 
-            <h3>
-                ಅರ್ಥಶಾಸ್ತ್ರ ಮತ್ತು ಕಾರ್ಮಿಕ ನೀತಿ
-            </h3>
+            <h3>Coronation</h3>
 
             <p>
-
-                ಅರ್ಥಶಾಸ್ತ್ರಜ್ಞರಾಗಿ ಅವರು ಹಣಕಾಸು,
-                ಕಾರ್ಮಿಕ ನೀತಿ ಮತ್ತು ಆರ್ಥಿಕ
-                ಆಡಳಿತದ ಕುರಿತು ಮಹತ್ವದ ಅಧ್ಯಯನಗಳನ್ನು
-                ನಡೆಸಿದರು.
-
+                Shivaji Maharaj was formally crowned
+                Chhatrapati at Raigad, marking an important
+                stage in the establishment of his sovereign state.
             </p>
 
         </div>
@@ -909,234 +574,161 @@
 </section>
 
 
-<!-- =========================
-     EVENT DETAILS
-========================= -->
+<!-- ================= INVITATION ================= -->
 
-<section
-    class="section event-section"
-    id="event"
->
+<section class="invitation" id="invitation">
 
-    <h2>
-        ಅಂಬೇಡ್ಕರ್ ಜಯಂತಿ ಕಾರ್ಯಕ್ರಮ 2026
-    </h2>
+    <h2>🚩 भव्य आमंत्रण 🚩</h2>
 
-    <p class="intro" style="color:white;">
-
-        ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ
-        ಜನ್ಮದಿನದ ಅಂಗವಾಗಿ ಆಯೋಜಿಸಿರುವ
-        ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಆತ್ಮೀಯ ಸ್ವಾಗತ.
-
-    </p>
-
-
-    <div class="event-grid">
-
-
-        <div class="event-box">
-
-            <div class="icon">
-                📅
-            </div>
-
-            <h3>
-                ದಿನಾಂಕ
-            </h3>
-
-            <p>
-                14 ಏಪ್ರಿಲ್ 2026
-            </p>
-
-        </div>
-
-
-        <div class="event-box">
-
-            <div class="icon">
-                📍
-            </div>
-
-            <h3>
-                ಸ್ಥಳ
-            </h3>
-
-            <p>
-                [ನಿಮ್ಮ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ]
-                <br>
-                ಕರ್ನಾಟಕ
-            </p>
-
-        </div>
-
-
-        <div class="event-box">
-
-            <div class="icon">
-                ⏰
-            </div>
-
-            <h3>
-                ಸಮಯ
-            </h3>
-
-            <p>
-                [ಕಾರ್ಯಕ್ರಮದ ಸಮಯ]
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     PROGRAMME
-========================= -->
-
-<section
-    class="section"
-    id="program"
->
-
-    <h2>
-        ಕಾರ್ಯಕ್ರಮದ ರೂಪುರೇಷೆ
-    </h2>
-
-    <p class="intro">
-
-        ಅಂಬೇಡ್ಕರ್ ಜಯಂತಿಯ ಅಂಗವಾಗಿ
-        ಕೆಳಗಿನ ರೀತಿಯ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು
-        ಆಯೋಜಿಸಬಹುದು.
-
-    </p>
-
-
-    <div class="program-list">
-
-        <div class="program-item">
-
-            🕯️
-            ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ
-            ಪುಷ್ಪ ನಮನ
-
-        </div>
-
-
-        <div class="program-item">
-
-            🎤
-            ಅಂಬೇಡ್ಕರ್ ಅವರ ಜೀವನ ಮತ್ತು
-            ಸಾಧನೆಗಳ ಕುರಿತು ವಿಶೇಷ ಭಾಷಣ
-
-        </div>
-
-
-        <div class="program-item">
-
-            📖
-            ಸಂವಿಧಾನ ಮತ್ತು ನಾಗರಿಕ ಹಕ್ಕುಗಳ
-            ಕುರಿತು ಜಾಗೃತಿ ಕಾರ್ಯಕ್ರಮ
-
-        </div>
-
-
-        <div class="program-item">
-
-            🎭
-            ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು
-
-        </div>
-
-
-        <div class="program-item">
-
-            🏆
-            ವಿಶೇಷ ಗೌರವ ಮತ್ತು ಸನ್ಮಾನ ಕಾರ್ಯಕ್ರಮ
-
-        </div>
-
-
-        <div class="program-item">
-
-            🇮🇳
-            ಸಂವಿಧಾನಿಕ ಮೌಲ್ಯಗಳ ಕುರಿತು
-            ಜಾಗೃತಿ ಸಂದೇಶ
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     WELCOME
-========================= -->
-
-<section class="welcome">
-
-    <h2>
-        ಎಲ್ಲರಿಗೂ ಆತ್ಮೀಯ ಸ್ವಾಗತ!
-    </h2>
+    <h3>
+        Chhatrapati Shivaji Maharaj Smruti & Cultural Programme
+    </h3>
 
     <p>
-
-        ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ
-        ಜನ್ಮದಿನದ ಅಂಗವಾಗಿ ನಡೆಯುವ
-        ಈ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಸಾರ್ವಜನಿಕರು,
-        ವಿದ್ಯಾರ್ಥಿಗಳು, ಯುವಕರು ಮತ್ತು
-        ಕುಟುಂಬ ಸಮೇತರಾಗಿ ಭಾಗವಹಿಸಲು
-        ಆತ್ಮೀಯವಾಗಿ ಆಹ್ವಾನಿಸುತ್ತೇವೆ.
-
-        <br><br>
-
-        <strong>
-            "ಶಿಕ್ಷಣ • ಸಮಾನತೆ • ಸ್ವಾತಂತ್ರ್ಯ • ನ್ಯಾಯ"
-        </strong>
-
+        महाराष्ट्राच्या महान राजाला अभिवादन करण्यासाठी
+        आयोजित विशेष कार्यक्रमास आपण सहकुटुंब सहपरिवार
+        उपस्थित राहावे, ही नम्र विनंती.
     </p>
 
-    <a
-        href="#event"
-        class="welcome-button"
-    >
-        ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಬನ್ನಿ
+
+    <div class="event-box">
+
+        <div>
+            📅 <strong>Date:</strong>
+            [Enter Date]
+        </div>
+
+        <div>
+            ⏰ <strong>Time:</strong>
+            [Enter Time]
+        </div>
+
+        <div>
+            📍 <strong>Venue:</strong>
+            [Enter Venue, Maharashtra]
+        </div>
+
+        <div>
+            👥 <strong>Organised By:</strong>
+            [Organisation Name]
+        </div>
+
+    </div>
+
+
+    <a href="#program" class="btn">
+        कार्यक्रम पाहा
     </a>
 
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- ================= PROGRAM ================= -->
+
+<section class="program" id="program">
+
+    <div class="section-title">
+
+        <h2>कार्यक्रमाची रूपरेषा</h2>
+
+        <p>Programme Schedule</p>
+
+    </div>
+
+
+    <div class="program-list">
+
+        <div class="program-item">
+            <span>🚩</span>
+            <div>
+                <strong>Flag Hoisting</strong>
+                <p>भगवा ध्वज पूजन व ध्वजारोहण</p>
+            </div>
+        </div>
+
+
+        <div class="program-item">
+            <span>🌺</span>
+            <div>
+                <strong>Floral Tribute</strong>
+                <p>छत्रपती शिवाजी महाराजांना पुष्पांजली</p>
+            </div>
+        </div>
+
+
+        <div class="program-item">
+            <span>🎤</span>
+            <div>
+                <strong>Shiv Charitra</strong>
+                <p>शिवचरित्र व प्रेरणादायी व्याख्यान</p>
+            </div>
+        </div>
+
+
+        <div class="program-item">
+            <span>🥁</span>
+            <div>
+                <strong>Traditional Cultural Programme</strong>
+                <p>महाराष्ट्राची पारंपरिक सांस्कृतिक कला</p>
+            </div>
+        </div>
+
+
+        <div class="program-item">
+            <span>🏰</span>
+            <div>
+                <strong>Fort Heritage Presentation</strong>
+                <p>महाराष्ट्रातील गड-किल्ल्यांचा इतिहास</p>
+            </div>
+        </div>
+
+
+        <div class="program-item">
+            <span>🙏</span>
+            <div>
+                <strong>Vote of Thanks</strong>
+                <p>आभार प्रदर्शन</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote">
+
+    <h2>🚩 शिवरायांना मानाचा मुजरा 🚩</h2>
+
+    <p>
+        "साहस, स्वराज्य, शिस्त आणि जनकल्याण
+        या मूल्यांनी शिवाजी महाराजांची ऐतिहासिक
+        ओळख घडवली."
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <h3>
-        Dr. B. R. Ambedkar Jayanti 2026
-    </h3>
+    <div class="om-footer">ॐ</div>
+
+    <h2>छत्रपती शिवाजी महाराज</h2>
 
     <p>
-        14 ಏಪ್ರಿಲ್ 2026
+        महाराष्ट्राच्या महान इतिहासाला आणि वारशाला अभिवादन.
     </p>
 
     <p>
-        ಕರ್ನಾಟಕ
-    </p>
-
-    <p>
-        ಶಿಕ್ಷಣ • ಸಮಾನತೆ • ಸಾಮಾಜಿಕ ನ್ಯಾಯ • ಸಂವಿಧಾನಿಕ ಮೌಲ್ಯಗಳು
-    </p>
-
-    <p>
-        © 2026 Ambedkar Jayanti Programme
+        © 2026 Shivaji Maharaj Cultural Website
     </p>
 
 </footer>
 
 
 </body>
-
 </html>
