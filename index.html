@@ -4,731 +4,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chhatrapati Shivaji Maharaj | Maharashtra</title>
+    <title>Kempegowda Jayanthi - Vidhana Soudha</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            scroll-behavior: smooth;
         }
 
         body {
-            font-family: Georgia, 'Times New Roman', serif;
-            background: #fff8ed;
-            color: #3b1605;
+            font-family: Georgia, serif;
+            background: #fff3df;
+            color: #3b1705;
         }
 
-        /* ================= HEADER ================= */
-
-        header {
-            background: linear-gradient(135deg, #8b1e05, #e85d04, #ff9d00);
+        /* TOP BAR */
+        .top {
+            background: #7b1e05;
             color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            letter-spacing: 1px;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .om {
-            font-size: 42px;
-            color: #ffe082;
-            font-weight: bold;
-        }
-
-        .logo h2 {
-            font-size: 22px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 22px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffe082;
-        }
-
-        /* ================= HERO ================= */
-
+        /* HERO SECTION */
         .hero {
             min-height: 90vh;
             display: flex;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            color: white;
-            padding: 50px 20px;
-
+            justify-content: space-around;
+            padding: 50px 8%;
             background:
-                linear-gradient(rgba(75, 15, 0, 0.72),
-                rgba(160, 50, 0, 0.65)),
-                url("shivaji.jpg");
-
-            background-size: cover;
-            background-position: center;
+                linear-gradient(rgba(255,145,0,0.88),
+                rgba(255,196,90,0.82));
         }
 
-        .hero-content {
-            max-width: 900px;
+        .content {
+            max-width: 600px;
+            text-align: center;
         }
 
-        .hero .om-big {
-            font-size: 80px;
-            color: #ffd166;
-            margin-bottom: 10px;
-        }
-
-        .hero h1 {
-            font-size: 58px;
+        .content h1 {
+            font-size: 55px;
+            color: #761b05;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 3px 3px 5px black;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 2px #ffd27a;
         }
 
-        .hero h2 {
-            font-size: 28px;
-            margin: 15px 0;
-            color: #ffe6a7;
+        .content h2 {
+            font-size: 32px;
+            color: #4b1705;
+            margin-bottom: 20px;
         }
 
-        .hero p {
+        .content p {
             font-size: 20px;
             line-height: 1.7;
         }
 
-        .btn {
+        .date {
             display: inline-block;
-            margin-top: 30px;
-            padding: 14px 30px;
-            background: #ffb000;
-            color: #4b1700;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: white;
-            transform: scale(1.05);
-        }
-
-        /* ================= COMMON ================= */
-
-        section {
-            padding: 70px 8%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .section-title h2 {
-            font-size: 40px;
-            color: #9e2907;
-        }
-
-        .section-title p {
-            margin-top: 10px;
-            color: #70401f;
-        }
-
-        /* ================= ABOUT ================= */
-
-        .about {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 45px;
-            align-items: center;
-        }
-
-        .about img {
-            width: 100%;
-            border-radius: 20px;
-            border: 7px solid #e77716;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .about-text h2 {
-            color: #9e2907;
-            font-size: 35px;
-            margin-bottom: 18px;
-        }
-
-        .about-text p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        /* ================= ACHIEVEMENTS ================= */
-
-        .achievements {
-            background: linear-gradient(#fff1dc, #fff8ed);
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 18px;
-            border-top: 6px solid #e85d04;
-            box-shadow: 0 7px 20px rgba(0,0,0,0.12);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-        }
-
-        .card .icon {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            color: #a83208;
-            margin-bottom: 12px;
-            font-size: 23px;
-        }
-
-        .card p {
-            line-height: 1.7;
-            color: #5a321d;
-        }
-
-        /* ================= INVITATION ================= */
-
-        .invitation {
-            background:
-                linear-gradient(rgba(125,30,0,0.9),
-                rgba(210,72,0,0.9)),
-                url("fort.jpg");
-
-            background-size: cover;
-            background-position: center;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: #7b1e05;
             color: white;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* IMAGE */
+        .photo {
+            width: 360px;
+            height: 500px;
+            object-fit: cover;
+            border: 10px solid #ffe0a3;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(80,30,0,0.5);
+        }
+
+        /* INVITATION */
+        .invitation {
+            padding: 60px 10%;
             text-align: center;
+            background: #fff8eb;
         }
 
         .invitation h2 {
-            font-size: 48px;
-            color: #ffd166;
-            margin-bottom: 15px;
-        }
-
-        .invitation h3 {
-            font-size: 30px;
+            font-size: 38px;
+            color: #851f05;
             margin-bottom: 20px;
         }
 
         .invitation p {
-            font-size: 20px;
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
             line-height: 1.8;
         }
 
-        .event-box {
-            max-width: 800px;
-            margin: 35px auto;
-            padding: 30px;
-            border: 2px solid #ffd166;
-            border-radius: 18px;
-            background: rgba(0,0,0,0.25);
-        }
-
-        .event-box div {
-            margin: 15px;
-            font-size: 20px;
-        }
-
-        /* ================= PROGRAM ================= */
-
-        .program {
-            background: #fff5e6;
-        }
-
-        .program-list {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .program-item {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: white;
-            margin: 15px 0;
-            padding: 20px;
-            border-left: 7px solid #e85d04;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .program-item span {
-            font-size: 30px;
-        }
-
-        /* ================= QUOTE ================= */
-
-        .quote {
-            text-align: center;
-            background: #8b1e05;
+        /* EVENT DETAILS */
+        .details {
+            padding: 60px 10%;
+            background: #8a2407;
             color: white;
-            padding: 80px 10%;
+            text-align: center;
         }
 
-        .quote h2 {
-            font-size: 35px;
-            color: #ffd166;
+        .details h2 {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff0d0;
+            color: #451500;
+            width: 250px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            color: #8a2407;
+            margin-bottom: 10px;
+        }
+
+        /* ABOUT KEMPEGOWDA */
+        .about {
+            padding: 60px 10%;
+            text-align: center;
+            background: #ffe0a3;
+        }
+
+        .about h2 {
+            color: #781d05;
+            font-size: 38px;
             margin-bottom: 20px;
         }
 
-        .quote p {
-            font-size: 25px;
-            line-height: 1.6;
-            font-style: italic;
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.8;
         }
 
-        /* ================= FOOTER ================= */
-
+        /* FOOTER */
         footer {
-            background: #3b1204;
+            background: #431000;
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 25px;
+            font-size: 17px;
         }
 
-        footer .om-footer {
-            font-size: 45px;
-            color: #ffb000;
-        }
+        /* MOBILE */
+        @media(max-width: 800px) {
 
-        footer p {
-            margin-top: 10px;
-        }
-
-        /* ================= RESPONSIVE ================= */
-
-        @media(max-width: 900px) {
-
-            nav {
-                display: none;
+            .hero {
+                flex-direction: column;
+                gap: 35px;
             }
 
-            .hero h1 {
+            .content h1 {
                 font-size: 38px;
             }
 
-            .hero h2 {
-                font-size: 22px;
+            .content h2 {
+                font-size: 25px;
             }
 
-            .about {
-                grid-template-columns: 1fr;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .invitation h2 {
-                font-size: 36px;
+            .photo {
+                width: 280px;
+                height: 390px;
             }
         }
-
     </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
-<header>
-
-    <div class="logo">
-
-        <div class="om">ॐ</div>
-
-        <div>
-            <h2>छत्रपती शिवाजी महाराज</h2>
-            <small>Chhatrapati Shivaji Maharaj</small>
-        </div>
-
+    <div class="top">
+        ✦ ಕನ್ನಡ ನಾಡಿನ ಹೆಮ್ಮೆಯ ನಾಯಕ ✦
     </div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#invitation">Invitation</a>
-        <a href="#program">Program</a>
-    </nav>
+    <section class="hero">
 
-</header>
+        <div class="content">
+
+            <h1>Kempegowda Jayanthi</h1>
+
+            <h2>ನಾಡಪ್ರಭು ಕೆಂಪೇಗೌಡ ಜಯಂತಿ</h2>
+
+            <p>
+                Join us in celebrating the life, vision and contribution
+                of Nādaprabhu Kempegowda, the founder of Bengaluru.
+            </p>
+
+            <div class="date">
+                June 27 • Kempegowda Jayanthi
+            </div>
+
+        </div>
+
+        <!-- YOUR IMAGE -->
+        <img src="kempegowda.jpg"
+             alt="Nadaprabhu Kempegowda"
+             class="photo">
+
+    </section>
 
 
-<!-- ================= HERO ================= -->
+    <section class="invitation">
 
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <div class="om-big">ॐ</div>
-
-        <h1>छत्रपती शिवाजी महाराज</h1>
-
-        <h2>Chhatrapati Shivaji Maharaj</h2>
+        <h2>🙏 Grand Celebration 🙏</h2>
 
         <p>
-            The Great Maratha King • Founder of Swarajya •
-            A Symbol of Courage, Leadership and Good Governance
+            We warmly invite you to join the Kempegowda Jayanthi
+            celebration near Vidhana Soudha, Bengaluru, and pay
+            tribute to the visionary leader whose contribution
+            shaped the history and development of Bengaluru.
         </p>
 
-        <a href="#invitation" class="btn">
-            कार्यक्रमासाठी आमंत्रण
-        </a>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ================= ABOUT ================= -->
+    <section class="details">
 
-<section id="about">
+        <h2> ಕಾರ್ಯಕ್ರಮದ ವಿವರಗಳು </h2>
 
-    <div class="section-title">
+        <div class="cards">
 
-        <h2>About Shivaji Maharaj</h2>
+            <div class="card">
+                <h3>📅 Date</h3>
+                <p>27 June</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Venue</h3>
+                <p>Near Vidhana Soudha</p>
+                <p>Bengaluru, Karnataka</p>
+            </div>
+
+            <div class="card">
+                <h3>🎉 Event</h3>
+                <p>Kempegowda Jayanthi Celebration</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about">
+
+        <h2>About Nādaprabhu Kempegowda</h2>
 
         <p>
-            छत्रपती शिवाजी महाराजांना मानाचा मुजरा
+            Nādaprabhu Kempegowda I is remembered as the founder of
+            Bengaluru. He played an important role in establishing
+            Bengaluru as an important settlement and is associated
+            with the city's early development, fortifications and
+            public infrastructure.
         </p>
 
-    </div>
+    </section>
 
 
-    <div class="about">
+    <footer>
 
-        <img src="shivaji2.jpg" alt="Chhatrapati Shivaji Maharaj">
+        <p>
+            ✨ Let us remember the vision and legacy of Nādaprabhu Kempegowda ✨
+        </p>
 
-        <div class="about-text">
+        <p>ಬೆಂಗಳೂರು • ಕರ್ನಾಟಕ</p>
 
-            <h2>छत्रपती शिवाजी महाराज</h2>
-
-            <p>
-                Chhatrapati Shivaji Maharaj was a major Maratha ruler
-                whose leadership shaped the Maratha state and the idea
-                of Swarajya.
-            </p>
-
-            <p>
-                He is remembered for his military leadership,
-                fort strategy, administration, naval development,
-                justice and concern for the welfare of his people.
-            </p>
-
-            <p>
-                His legacy continues to be remembered throughout
-                Maharashtra and India.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ACHIEVEMENTS ================= -->
-
-<section class="achievements" id="achievements">
-
-    <div class="section-title">
-
-        <h2>🏆 Major Achievements</h2>
-
-        <p>शिवाजी महाराजांच्या महान कार्याला अभिवादन</p>
-
-    </div>
-
-
-    <div class="cards">
-
-
-        <div class="card">
-
-            <div class="icon">🏰</div>
-
-            <h3>Fort Strategy</h3>
-
-            <p>
-                Shivaji Maharaj developed and strengthened
-                a network of important forts across the
-                Sahyadri region. Forts played an important
-                role in the defence and administration of his state.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">⚔️</div>
-
-            <h3>Military Leadership</h3>
-
-            <p>
-                He became known for strategic military
-                planning and effective use of the difficult
-                mountain terrain of the Western Ghats.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">🚢</div>
-
-            <h3>Naval Strength</h3>
-
-            <p>
-                Shivaji Maharaj recognised the importance
-                of naval power and developed maritime
-                capabilities along the Konkan coast.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">⚖️</div>
-
-            <h3>Good Administration</h3>
-
-            <p>
-                His rule is remembered for organised
-                administration, governance and policies
-                focused on the functioning of the state.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">🛡️</div>
-
-            <h3>Swarajya</h3>
-
-            <p>
-                The idea of Swarajya became central to
-                Shivaji Maharaj's state-building vision and
-                remains an important part of his historical legacy.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">👑</div>
-
-            <h3>Coronation</h3>
-
-            <p>
-                Shivaji Maharaj was formally crowned
-                Chhatrapati at Raigad, marking an important
-                stage in the establishment of his sovereign state.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= INVITATION ================= -->
-
-<section class="invitation" id="invitation">
-
-    <h2>🚩 भव्य आमंत्रण 🚩</h2>
-
-    <h3>
-        Chhatrapati Shivaji Maharaj Smruti & Cultural Programme
-    </h3>
-
-    <p>
-        महाराष्ट्राच्या महान राजाला अभिवादन करण्यासाठी
-        आयोजित विशेष कार्यक्रमास आपण सहकुटुंब सहपरिवार
-        उपस्थित राहावे, ही नम्र विनंती.
-    </p>
-
-
-    <div class="event-box">
-
-        <div>
-            📅 <strong>Date:</strong>
-            [Enter Date]
-        </div>
-
-        <div>
-            ⏰ <strong>Time:</strong>
-            [Enter Time]
-        </div>
-
-        <div>
-            📍 <strong>Venue:</strong>
-            [Enter Venue, Maharashtra]
-        </div>
-
-        <div>
-            👥 <strong>Organised By:</strong>
-            [Organisation Name]
-        </div>
-
-    </div>
-
-
-    <a href="#program" class="btn">
-        कार्यक्रम पाहा
-    </a>
-
-</section>
-
-
-<!-- ================= PROGRAM ================= -->
-
-<section class="program" id="program">
-
-    <div class="section-title">
-
-        <h2>कार्यक्रमाची रूपरेषा</h2>
-
-        <p>Programme Schedule</p>
-
-    </div>
-
-
-    <div class="program-list">
-
-        <div class="program-item">
-            <span>🚩</span>
-            <div>
-                <strong>Flag Hoisting</strong>
-                <p>भगवा ध्वज पूजन व ध्वजारोहण</p>
-            </div>
-        </div>
-
-
-        <div class="program-item">
-            <span>🌺</span>
-            <div>
-                <strong>Floral Tribute</strong>
-                <p>छत्रपती शिवाजी महाराजांना पुष्पांजली</p>
-            </div>
-        </div>
-
-
-        <div class="program-item">
-            <span>🎤</span>
-            <div>
-                <strong>Shiv Charitra</strong>
-                <p>शिवचरित्र व प्रेरणादायी व्याख्यान</p>
-            </div>
-        </div>
-
-
-        <div class="program-item">
-            <span>🥁</span>
-            <div>
-                <strong>Traditional Cultural Programme</strong>
-                <p>महाराष्ट्राची पारंपरिक सांस्कृतिक कला</p>
-            </div>
-        </div>
-
-
-        <div class="program-item">
-            <span>🏰</span>
-            <div>
-                <strong>Fort Heritage Presentation</strong>
-                <p>महाराष्ट्रातील गड-किल्ल्यांचा इतिहास</p>
-            </div>
-        </div>
-
-
-        <div class="program-item">
-            <span>🙏</span>
-            <div>
-                <strong>Vote of Thanks</strong>
-                <p>आभार प्रदर्शन</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= QUOTE ================= -->
-
-<section class="quote">
-
-    <h2>🚩 शिवरायांना मानाचा मुजरा 🚩</h2>
-
-    <p>
-        "साहस, स्वराज्य, शिस्त आणि जनकल्याण
-        या मूल्यांनी शिवाजी महाराजांची ऐतिहासिक
-        ओळख घडवली."
-    </p>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="om-footer">ॐ</div>
-
-    <h2>छत्रपती शिवाजी महाराज</h2>
-
-    <p>
-        महाराष्ट्राच्या महान इतिहासाला आणि वारशाला अभिवादन.
-    </p>
-
-    <p>
-        © 2026 Shivaji Maharaj Cultural Website
-    </p>
-
-</footer>
-
+    </footer>
 
 </body>
 </html>
