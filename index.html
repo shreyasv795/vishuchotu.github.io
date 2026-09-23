@@ -5,9 +5,12 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Shreyas Fitness | Train Hard. Stay Strong.</title>
+    <title>
+        Ambedkar Jayanti 2026 | Karnataka
+    </title>
 
     <style>
 
@@ -19,439 +22,576 @@
         }
 
         body {
-            background: #0b0b0b;
-            color: white;
+            background: #f5f5f5;
+            color: #222;
         }
 
-        /* NAVBAR */
+
+        /* =========================
+           NAVBAR
+        ========================= */
 
         nav {
-            background: #080808;
-            padding: 20px 8%;
+
+            background: #071a35;
+
+            color: white;
+
+            padding: 18px 8%;
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
-            border-bottom: 1px solid #292929;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #ff2b2b;
-        }
 
-        .logo span {
-            color: white;
+            font-size: 25px;
+
+            font-weight: bold;
+
+            color: #f4c430;
         }
 
         nav ul {
+
             display: flex;
+
             list-style: none;
-            gap: 28px;
+
+            gap: 25px;
         }
 
         nav ul li a {
+
             color: white;
+
             text-decoration: none;
+
             font-weight: bold;
         }
 
         nav ul li a:hover {
-            color: #ff2b2b;
+
+            color: #f4c430;
         }
 
-        .nav-btn {
-            background: #ff2b2b;
-            color: white;
-            padding: 11px 20px;
-            text-decoration: none;
+        .nav-button {
+
+            background: #f4c430;
+
+            color: #071a35;
+
+            padding: 10px 18px;
+
             border-radius: 5px;
+
+            text-decoration: none;
+
             font-weight: bold;
         }
 
 
-        /* HERO */
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
+
             min-height: 650px;
 
             display: flex;
+
+            justify-content: center;
+
             align-items: center;
 
-            padding: 80px 8%;
+            text-align: center;
+
+            padding: 70px 8%;
+
+            color: white;
 
             background:
+
                 linear-gradient(
-                    90deg,
-                    rgba(0,0,0,0.95),
-                    rgba(0,0,0,0.65)
+                    rgba(3, 20, 45, 0.88),
+                    rgba(7, 55, 100, 0.88)
                 ),
-                url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e")
+
+                url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da")
+
                 center/cover;
         }
 
         .hero-content {
-            max-width: 700px;
+
+            max-width: 900px;
         }
 
-        .hero h1 {
-            font-size: 65px;
-            line-height: 1.05;
+        .hero-symbol {
+
+            font-size: 75px;
+
             margin-bottom: 20px;
         }
 
-        .hero h1 span {
-            color: #ff2b2b;
+        .hero h1 {
+
+            font-size: 58px;
+
+            margin-bottom: 15px;
+
+            color: #f4c430;
+        }
+
+        .hero h2 {
+
+            font-size: 30px;
+
+            margin-bottom: 25px;
         }
 
         .hero p {
-            color: #ddd;
+
             font-size: 20px;
-            line-height: 1.7;
-            margin-bottom: 30px;
+
+            line-height: 1.8;
+
+            color: #eeeeee;
         }
 
-        .hero-btn {
+        .hero-button {
+
             display: inline-block;
-            background: #ff2b2b;
-            color: white;
+
+            margin-top: 30px;
+
+            background: #f4c430;
+
+            color: #071a35;
+
             padding: 16px 30px;
+
+            border-radius: 6px;
+
             text-decoration: none;
-            border-radius: 5px;
+
             font-weight: bold;
-            margin-right: 10px;
+
+            font-size: 18px;
         }
 
-        .hero-btn:hover {
+        .hero-button:hover {
+
             background: white;
-            color: #111;
-        }
-
-        .outline-btn {
-            display: inline-block;
-            border: 2px solid white;
-            color: white;
-            padding: 14px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
         }
 
 
-        /* GENERAL SECTION */
+        /* =========================
+           GENERAL SECTION
+        ========================= */
 
         .section {
-            padding: 80px 8%;
+
+            padding: 75px 8%;
+
             text-align: center;
         }
 
+        .section h2 {
+
+            font-size: 38px;
+
+            color: #071a35;
+
+            margin-bottom: 18px;
+        }
+
         .section-title {
-            font-size: 42px;
+
+            color: #125ca8;
+        }
+
+        .intro {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            color: #555;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 50px;
+
+            max-width: 1200px;
+
+            margin: 40px auto 0;
+
+            text-align: left;
+        }
+
+        .about-image {
+
+            flex: 1;
+
+            background: #071a35;
+
+            min-height: 350px;
+
+            border-radius: 15px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #f4c430;
+
+            font-size: 100px;
+        }
+
+        .about-text {
+
+            flex: 1;
+        }
+
+        .about-text h3 {
+
+            font-size: 30px;
+
+            color: #125ca8;
+
+            margin-bottom: 18px;
+        }
+
+        .about-text p {
+
+            line-height: 1.8;
+
+            color: #555;
+
             margin-bottom: 15px;
         }
 
-        .section-title span {
-            color: #ff2b2b;
+
+        /* =========================
+           ACHIEVEMENTS
+        ========================= */
+
+        .achievements {
+
+            background: #eef4fa;
         }
 
-        .section-description {
-            color: #aaa;
-            max-width: 700px;
-            margin: auto;
+        .achievement-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            margin-top: 45px;
+        }
+
+        .achievement {
+
+            background: white;
+
+            padding: 32px 25px;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 5px 18px
+                rgba(0,0,0,0.08);
+
+            transition: 0.3s;
+
+            text-align: left;
+        }
+
+        .achievement:hover {
+
+            transform: translateY(-7px);
+        }
+
+        .achievement-icon {
+
+            font-size: 45px;
+
+            margin-bottom: 15px;
+        }
+
+        .achievement h3 {
+
+            color: #071a35;
+
+            margin-bottom: 12px;
+
+            font-size: 22px;
+        }
+
+        .achievement p {
+
+            color: #666;
+
             line-height: 1.7;
         }
 
 
-        /* TRAINING */
+        /* =========================
+           EVENT DETAILS
+        ========================= */
 
-        .training {
+        .event-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #071a35,
+                    #0b4f8a
+                );
+
+            color: white;
+        }
+
+        .event-section h2 {
+
+            color: #f4c430;
+        }
+
+        .event-grid {
+
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 22px;
-            margin-top: 45px;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            margin-top: 40px;
         }
 
-        .training-card {
-            background: #151515;
-            padding: 35px 20px;
-            border-radius: 10px;
-            border: 1px solid #292929;
-            transition: 0.3s;
+        .event-box {
+
+            padding: 30px;
+
+            background:
+                rgba(255,255,255,0.12);
+
+            border-radius: 12px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.2);
         }
 
-        .training-card:hover {
-            transform: translateY(-8px);
-            border-color: #ff2b2b;
-        }
+        .event-box .icon {
 
-        .training-icon {
             font-size: 45px;
-            margin-bottom: 18px;
+
+            margin-bottom: 15px;
         }
 
-        .training-card h3 {
-            margin-bottom: 12px;
-            color: #ff4040;
+        .event-box h3 {
+
+            margin-bottom: 10px;
+
+            color: #f4c430;
         }
 
-        .training-card p {
-            color: #aaa;
+        .event-box p {
+
             line-height: 1.6;
         }
 
 
-        /* PRICING */
+        /* =========================
+           PROGRAM
+        ========================= */
 
-        .pricing-section {
-            background: #111;
-        }
+        .program-list {
 
-        .pricing {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-top: 45px;
-        }
+            max-width: 800px;
 
-        .price-card {
-            background: #181818;
-            padding: 40px 30px;
-            border-radius: 12px;
-            border: 1px solid #333;
-            position: relative;
-        }
+            margin: 40px auto 0;
 
-        .price-card.popular {
-            border: 2px solid #ff2b2b;
-            transform: scale(1.04);
-        }
-
-        .popular-label {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #ff2b2b;
-            padding: 7px 20px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        .price-card h3 {
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-
-        .price {
-            font-size: 42px;
-            font-weight: bold;
-            color: #ff2b2b;
-            margin-bottom: 25px;
-        }
-
-        .price span {
-            font-size: 15px;
-            color: #aaa;
-        }
-
-        .price-card ul {
-            list-style: none;
             text-align: left;
-            line-height: 2.2;
-            color: #ccc;
-            margin-bottom: 25px;
         }
 
-        .price-card li::before {
-            content: "✓ ";
-            color: #ff2b2b;
-            font-weight: bold;
-        }
+        .program-item {
 
-        .price-btn {
-            display: block;
-            background: #ff2b2b;
-            color: white;
-            text-decoration: none;
-            padding: 13px;
+            background: white;
+
+            padding: 20px;
+
+            margin-bottom: 12px;
+
+            border-left:
+                6px solid #125ca8;
+
             border-radius: 5px;
-            font-weight: bold;
+
+            box-shadow:
+                0 3px 10px
+                rgba(0,0,0,0.06);
+
+            font-size: 18px;
         }
 
 
-        /* BENEFITS */
+        /* =========================
+           WELCOME SECTION
+        ========================= */
 
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-top: 45px;
+        .welcome {
+
+            background: #f4c430;
+
+            color: #071a35;
+
+            text-align: center;
+
+            padding: 75px 8%;
         }
 
-        .benefit {
-            background: #151515;
-            padding: 30px 20px;
-            border-radius: 10px;
-        }
+        .welcome h2 {
 
-        .benefit-icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
+            font-size: 42px;
 
-        .benefit h3 {
-            margin-bottom: 10px;
-            color: #ff4040;
-        }
-
-        .benefit p {
-            color: #aaa;
-            line-height: 1.5;
-        }
-
-
-        /* TRAINERS */
-
-        .trainers {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-top: 45px;
-        }
-
-        .trainer {
-            background: #151515;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        .trainer-image {
-            width: 130px;
-            height: 130px;
-            margin: auto;
-            border-radius: 50%;
-            background: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 55px;
             margin-bottom: 20px;
         }
 
-        .trainer h3 {
-            margin-bottom: 8px;
-        }
+        .welcome p {
 
-        .trainer p {
-            color: #ff4040;
-        }
+            max-width: 850px;
 
+            margin: auto;
 
-        /* CTA */
-
-        .cta {
-            padding: 80px 8%;
-            text-align: center;
-
-            background:
-                linear-gradient(
-                    rgba(180,0,0,0.85),
-                    rgba(80,0,0,0.9)
-                ),
-                url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48")
-                center/cover;
-        }
-
-        .cta h2 {
-            font-size: 45px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
             font-size: 19px;
-            margin-bottom: 25px;
+
+            line-height: 1.8;
         }
 
-        .cta-btn {
+        .welcome-button {
+
             display: inline-block;
-            background: white;
-            color: #111;
+
+            margin-top: 30px;
+
+            background: #071a35;
+
+            color: white;
+
             padding: 15px 30px;
+
+            border-radius: 6px;
+
             text-decoration: none;
-            border-radius: 5px;
+
             font-weight: bold;
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
-            background: #050505;
-            padding: 40px 8%;
+
+            background: #050f20;
+
+            color: white;
+
             text-align: center;
+
+            padding: 40px 8%;
         }
 
         footer h3 {
-            color: #ff2b2b;
+
+            color: #f4c430;
+
             font-size: 27px;
+
             margin-bottom: 12px;
         }
 
         footer p {
-            color: #888;
-            margin: 7px;
+
+            margin: 8px;
+
+            color: #ccc;
         }
 
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media(max-width: 850px) {
 
             nav {
+
                 flex-direction: column;
-                gap: 20px;
+
+                gap: 18px;
             }
 
             nav ul {
+
                 flex-wrap: wrap;
+
                 justify-content: center;
             }
 
             .hero h1 {
-                font-size: 45px;
+
+                font-size: 40px;
             }
 
-            .training,
-            .benefits {
-                grid-template-columns: 1fr 1fr;
+            .hero h2 {
+
+                font-size: 24px;
             }
 
-            .pricing,
-            .trainers {
+            .about {
+
+                flex-direction: column;
+            }
+
+            .achievement-grid,
+            .event-grid {
+
                 grid-template-columns: 1fr;
             }
-
-            .price-card.popular {
-                transform: none;
-            }
-        }
-
-        @media(max-width: 500px) {
-
-            .training,
-            .benefits {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                padding: 60px 6%;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
         }
 
     </style>
@@ -462,12 +602,14 @@
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
     <div class="logo">
-        SHREYAS <span>FITNESS</span>
+        🇮🇳 AMBEDKAR JAYANTI
     </div>
 
     <ul>
@@ -477,483 +619,519 @@
         </li>
 
         <li>
-            <a href="#training">Training</a>
+            <a href="#about">About</a>
         </li>
 
         <li>
-            <a href="#plans">Membership</a>
+            <a href="#achievements">Achievements</a>
         </li>
 
         <li>
-            <a href="#trainers">Trainers</a>
+            <a href="#event">Event</a>
         </li>
 
         <li>
-            <a href="#contact">Contact</a>
+            <a href="#program">Programme</a>
         </li>
 
     </ul>
 
-    <a href="#plans" class="nav-btn">
-        JOIN NOW
+    <a href="#event" class="nav-button">
+        Event Details
     </a>
 
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
     <div class="hero-content">
 
+        <div class="hero-symbol">
+            ⚖️
+        </div>
+
         <h1>
-            TRAIN HARD.<br>
-            <span>GET STRONG.</span><br>
-            STAY FIT.
+            Dr. B. R. Ambedkar Jayanti
         </h1>
 
+        <h2>
+            ಏಪ್ರಿಲ್ 14 — ಸಮಾನತೆ ಮತ್ತು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳ ಸ್ಮರಣೆ
+        </h2>
+
         <p>
-            Transform your body with expert trainers,
-            structured workout programs and a supportive
-            fitness community at Shreyas Fitness.
+
+            ಭಾರತದ ಸಂವಿಧಾನದ ಕರಡು ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿದ್ದ
+            ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ ಜನ್ಮದಿನವನ್ನು
+            ಸ್ಮರಿಸುವ ಈ ವಿಶೇಷ ದಿನದಂದು ಕರ್ನಾಟಕದ
+            ಜನತೆಗೆ ಆತ್ಮೀಯ ಸ್ವಾಗತ.
+
         </p>
 
-        <a href="#plans" class="hero-btn">
-            VIEW MEMBERSHIP
+        <a
+            href="#event"
+            class="hero-button"
+        >
+            ಕಾರ್ಯಕ್ರಮದ ವಿವರ
         </a>
 
-        <a href="#training" class="outline-btn">
-            OUR TRAINING
-        </a>
-
     </div>
 
 </section>
 
 
-<!-- TRAINING -->
-
-<section class="section" id="training">
-
-    <h2 class="section-title">
-        OUR <span>TRAINING</span>
-    </h2>
-
-    <p class="section-description">
-        Training programs designed for different fitness
-        goals and experience levels.
-    </p>
-
-
-    <div class="training">
-
-
-        <div class="training-card">
-
-            <div class="training-icon">
-                🏋️
-            </div>
-
-            <h3>
-                Strength Training
-            </h3>
-
-            <p>
-                Build strength, improve performance and
-                develop better lifting technique.
-            </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-            <div class="training-icon">
-                🔥
-            </div>
-
-            <h3>
-                Fat Loss
-            </h3>
-
-            <p>
-                Structured workouts designed to support
-                healthy fat loss and fitness.
-            </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-            <div class="training-icon">
-                💪
-            </div>
-
-            <h3>
-                Muscle Building
-            </h3>
-
-            <p>
-                Progressive resistance training to help
-                develop muscle and strength.
-            </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-            <div class="training-icon">
-                🧘
-            </div>
-
-            <h3>
-                Personal Training
-            </h3>
-
-            <p>
-                One-to-one coaching with workouts
-                adapted to individual goals.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- MEMBERSHIP -->
-
-<section class="section pricing-section" id="plans">
-
-    <h2 class="section-title">
-        MEMBERSHIP <span>PLANS</span>
-    </h2>
-
-    <p class="section-description">
-        Choose a membership that fits your training goals.
-    </p>
-
-
-    <div class="pricing">
-
-
-        <!-- BASIC -->
-
-        <div class="price-card">
-
-            <h3>
-                BASIC
-            </h3>
-
-            <div class="price">
-                ₹1,499
-                <span>/ month</span>
-            </div>
-
-            <ul>
-
-                <li>Gym Access</li>
-
-                <li>Cardio Equipment</li>
-
-                <li>Strength Equipment</li>
-
-                <li>Locker Facility</li>
-
-                <li>Workout Guidance</li>
-
-            </ul>
-
-            <a href="#contact" class="price-btn">
-                JOIN BASIC
-            </a>
-
-        </div>
-
-
-        <!-- PREMIUM -->
-
-        <div class="price-card popular">
-
-            <div class="popular-label">
-                MOST POPULAR
-            </div>
-
-            <h3>
-                PREMIUM
-            </h3>
-
-            <div class="price">
-                ₹2,499
-                <span>/ month</span>
-            </div>
-
-            <ul>
-
-                <li>Everything in Basic</li>
-
-                <li>Personal Trainer Support</li>
-
-                <li>Customized Workout Plan</li>
-
-                <li>Nutrition Guidance</li>
-
-                <li>Progress Tracking</li>
-
-                <li>Group Training</li>
-
-            </ul>
-
-            <a href="#contact" class="price-btn">
-                JOIN PREMIUM
-            </a>
-
-        </div>
-
-
-        <!-- ANNUAL -->
-
-        <div class="price-card">
-
-            <h3>
-                ANNUAL
-            </h3>
-
-            <div class="price">
-                ₹14,999
-                <span>/ year</span>
-            </div>
-
-            <ul>
-
-                <li>Full Gym Access</li>
-
-                <li>Personal Trainer Support</li>
-
-                <li>Customized Workout Plan</li>
-
-                <li>Nutrition Guidance</li>
-
-                <li>Progress Tracking</li>
-
-                <li>Fitness Assessment</li>
-
-            </ul>
-
-            <a href="#contact" class="price-btn">
-                JOIN ANNUAL
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- BENEFITS -->
-
-<section class="section">
-
-    <h2 class="section-title">
-        MEMBERSHIP <span>BENEFITS</span>
-    </h2>
-
-
-    <div class="benefits">
-
-
-        <div class="benefit">
-
-            <div class="benefit-icon">
-                🏋️
-            </div>
-
-            <h3>
-                Modern Equipment
-            </h3>
-
-            <p>
-                Quality equipment for strength,
-                cardio and functional training.
-            </p>
-
-        </div>
-
-
-        <div class="benefit">
-
-            <div class="benefit-icon">
-                👨‍🏫
-            </div>
-
-            <h3>
-                Expert Trainers
-            </h3>
-
-            <p>
-                Get guidance from trainers who
-                can help you follow your program.
-            </p>
-
-        </div>
-
-
-        <div class="benefit">
-
-            <div class="benefit-icon">
-                📊
-            </div>
-
-            <h3>
-                Progress Tracking
-            </h3>
-
-            <p>
-                Track your workouts and monitor
-                your fitness progress.
-            </p>
-
-        </div>
-
-
-        <div class="benefit">
-
-            <div class="benefit-icon">
-                🥗
-            </div>
-
-            <h3>
-                Nutrition Guidance
-            </h3>
-
-            <p>
-                Practical nutrition guidance to
-                support your fitness goals.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- TRAINERS -->
-
-<section class="section" id="trainers">
-
-    <h2 class="section-title">
-        MEET OUR <span>TRAINERS</span>
-    </h2>
-
-
-    <div class="trainers">
-
-
-        <div class="trainer">
-
-            <div class="trainer-image">
-                💪
-            </div>
-
-            <h3>
-                Trainer Name
-            </h3>
-
-            <p>
-                Strength & Conditioning
-            </p>
-
-        </div>
-
-
-        <div class="trainer">
-
-            <div class="trainer-image">
-                🏋️
-            </div>
-
-            <h3>
-                Trainer Name
-            </h3>
-
-            <p>
-                Personal Training
-            </p>
-
-        </div>
-
-
-        <div class="trainer">
-
-            <div class="trainer-image">
-                🔥
-            </div>
-
-            <h3>
-                Trainer Name
-            </h3>
-
-            <p>
-                Fat Loss & Fitness
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta" id="contact">
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
 
     <h2>
-        READY TO START?
+        ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ ಬಗ್ಗೆ
+    </h2>
+
+    <p class="intro">
+
+        ಡಾ. ಭೀಮರಾವ್ ರಾಮಜಿ ಅಂಬೇಡ್ಕರ್
+        14 ಏಪ್ರಿಲ್ 1891ರಂದು ಜನಿಸಿದರು.
+        ಅವರು ಕಾನೂನು ತಜ್ಞ, ಅರ್ಥಶಾಸ್ತ್ರಜ್ಞ,
+        ಸಮಾಜ ಸುಧಾರಕ ಮತ್ತು ಚಿಂತಕರಾಗಿದ್ದರು.
+
+    </p>
+
+
+    <div class="about">
+
+        <div class="about-image">
+            ⚖️
+        </div>
+
+
+        <div class="about-text">
+
+            <h3>
+                ಸಮಾನತೆ ಮತ್ತು ಸಾಮಾಜಿಕ ನ್ಯಾಯದ ಹೋರಾಟಗಾರ
+            </h3>
+
+            <p>
+
+                ಅಂಬೇಡ್ಕರ್ ಅವರು ಸಾಮಾಜಿಕ ಅಸಮಾನತೆ ಮತ್ತು
+                ಜಾತಿ ಆಧಾರಿತ ತಾರತಮ್ಯದ ವಿರುದ್ಧ ತಮ್ಮ
+                ಜೀವನದ ಬಹುಭಾಗವನ್ನು ಹೋರಾಟಕ್ಕೆ ಸಮರ್ಪಿಸಿದರು.
+
+            </p>
+
+            <p>
+
+                ಅವರು ಶಿಕ್ಷಣ, ಸಮಾನ ಹಕ್ಕುಗಳು,
+                ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಪ್ರಜಾಪ್ರಭುತ್ವದ
+                ಮೌಲ್ಯಗಳಿಗೆ ಮಹತ್ವ ನೀಡಿದರು.
+
+            </p>
+
+            <p>
+
+                1947ರಲ್ಲಿ ಅವರು ಸ್ವತಂತ್ರ ಭಾರತದ
+                ಮೊದಲ ಕಾನೂನು ಸಚಿವರಾದರು ಮತ್ತು
+                ಸಂವಿಧಾನದ ಕರಡು ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿ
+                ಸೇವೆ ಸಲ್ಲಿಸಿದರು.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ACHIEVEMENTS
+========================= -->
+
+<section
+    class="section achievements"
+    id="achievements"
+>
+
+    <h2>
+        ಡಾ. ಅಂಬೇಡ್ಕರ್ ಅವರ ಪ್ರಮುಖ ಸಾಧನೆಗಳು
+    </h2>
+
+    <p class="intro">
+
+        ಅವರ ಜೀವನವು ಕಾನೂನು, ಅರ್ಥಶಾಸ್ತ್ರ,
+        ಶಿಕ್ಷಣ, ಸಾಮಾಜಿಕ ಸುಧಾರಣೆ ಮತ್ತು
+        ಸಾರ್ವಜನಿಕ ನೀತಿ ಸೇರಿದಂತೆ ಹಲವು ಕ್ಷೇತ್ರಗಳನ್ನು
+        ಒಳಗೊಂಡಿತ್ತು.
+
+    </p>
+
+
+    <div class="achievement-grid">
+
+
+        <div class="achievement">
+
+            <div class="achievement-icon">
+                📜
+            </div>
+
+            <h3>
+                ಭಾರತೀಯ ಸಂವಿಧಾನ
+            </h3>
+
+            <p>
+
+                ಸಂವಿಧಾನದ ಕರಡು ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿ
+                ಡಾ. ಅಂಬೇಡ್ಕರ್ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸಿದರು.
+                ಸಂವಿಧಾನವನ್ನು ಸಂವಿಧಾನ ಸಭೆಯು
+                26 ನವೆಂಬರ್ 1949ರಂದು ಅಂಗೀಕರಿಸಿತು.
+
+            </p>
+
+        </div>
+
+
+        <div class="achievement">
+
+            <div class="achievement-icon">
+                ⚖️
+            </div>
+
+            <h3>
+                ಕಾನೂನು ಮತ್ತು ನ್ಯಾಯ
+            </h3>
+
+            <p>
+
+                ಅವರು ಸ್ವತಂತ್ರ ಭಾರತದ ಮೊದಲ
+                ಕಾನೂನು ಸಚಿವರಾಗಿದ್ದರು ಮತ್ತು
+                ಕಾನೂನು ಕ್ಷೇತ್ರದಲ್ಲಿ ಮಹತ್ವದ
+                ಕೊಡುಗೆ ನೀಡಿದರು.
+
+            </p>
+
+        </div>
+
+
+        <div class="achievement">
+
+            <div class="achievement-icon">
+                🎓
+            </div>
+
+            <h3>
+                ಶಿಕ್ಷಣ
+            </h3>
+
+            <p>
+
+                ಶಿಕ್ಷಣವನ್ನು ಸಾಮಾಜಿಕ ಪರಿವರ್ತನೆಯ
+                ಪ್ರಮುಖ ಸಾಧನವೆಂದು ಅವರು ಪರಿಗಣಿಸಿದರು.
+                ಹಿಂದುಳಿದ ಸಮುದಾಯಗಳ ಶಿಕ್ಷಣ ಮತ್ತು
+                ಪ್ರಗತಿಗೆ ಅವರು ಒತ್ತು ನೀಡಿದರು.
+
+            </p>
+
+        </div>
+
+
+        <div class="achievement">
+
+            <div class="achievement-icon">
+                ⚖️
+            </div>
+
+            <h3>
+                ಸಾಮಾಜಿಕ ನ್ಯಾಯ
+            </h3>
+
+            <p>
+
+                ಜಾತಿ ಆಧಾರಿತ ತಾರತಮ್ಯ ಮತ್ತು
+                ಅಸ್ಪೃಶ್ಯತೆಯ ವಿರುದ್ಧ ಅವರು
+                ಸಾಮಾಜಿಕ ಚಳವಳಿಗಳನ್ನು ಮುನ್ನಡೆಸಿದರು.
+
+            </p>
+
+        </div>
+
+
+        <div class="achievement">
+
+            <div class="achievement-icon">
+                👩
+            </div>
+
+            <h3>
+                ಮಹಿಳಾ ಹಕ್ಕುಗಳು
+            </h3>
+
+            <p>
+
+                ಮಹಿಳೆಯರ ಶಿಕ್ಷಣ ಮತ್ತು ಹಕ್ಕುಗಳ
+                ವಿಸ್ತರಣೆಗೆ ಅವರು ಸಾರ್ವಜನಿಕ ಜೀವನದಲ್ಲಿ
+                ಒತ್ತು ನೀಡಿದರು.
+
+            </p>
+
+        </div>
+
+
+        <div class="achievement">
+
+            <div class="achievement-icon">
+                💼
+            </div>
+
+            <h3>
+                ಅರ್ಥಶಾಸ್ತ್ರ ಮತ್ತು ಕಾರ್ಮಿಕ ನೀತಿ
+            </h3>
+
+            <p>
+
+                ಅರ್ಥಶಾಸ್ತ್ರಜ್ಞರಾಗಿ ಅವರು ಹಣಕಾಸು,
+                ಕಾರ್ಮಿಕ ನೀತಿ ಮತ್ತು ಆರ್ಥಿಕ
+                ಆಡಳಿತದ ಕುರಿತು ಮಹತ್ವದ ಅಧ್ಯಯನಗಳನ್ನು
+                ನಡೆಸಿದರು.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EVENT DETAILS
+========================= -->
+
+<section
+    class="section event-section"
+    id="event"
+>
+
+    <h2>
+        ಅಂಬೇಡ್ಕರ್ ಜಯಂತಿ ಕಾರ್ಯಕ್ರಮ 2026
+    </h2>
+
+    <p class="intro" style="color:white;">
+
+        ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ
+        ಜನ್ಮದಿನದ ಅಂಗವಾಗಿ ಆಯೋಜಿಸಿರುವ
+        ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಆತ್ಮೀಯ ಸ್ವಾಗತ.
+
+    </p>
+
+
+    <div class="event-grid">
+
+
+        <div class="event-box">
+
+            <div class="icon">
+                📅
+            </div>
+
+            <h3>
+                ದಿನಾಂಕ
+            </h3>
+
+            <p>
+                14 ಏಪ್ರಿಲ್ 2026
+            </p>
+
+        </div>
+
+
+        <div class="event-box">
+
+            <div class="icon">
+                📍
+            </div>
+
+            <h3>
+                ಸ್ಥಳ
+            </h3>
+
+            <p>
+                [ನಿಮ್ಮ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ]
+                <br>
+                ಕರ್ನಾಟಕ
+            </p>
+
+        </div>
+
+
+        <div class="event-box">
+
+            <div class="icon">
+                ⏰
+            </div>
+
+            <h3>
+                ಸಮಯ
+            </h3>
+
+            <p>
+                [ಕಾರ್ಯಕ್ರಮದ ಸಮಯ]
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROGRAMME
+========================= -->
+
+<section
+    class="section"
+    id="program"
+>
+
+    <h2>
+        ಕಾರ್ಯಕ್ರಮದ ರೂಪುರೇಷೆ
+    </h2>
+
+    <p class="intro">
+
+        ಅಂಬೇಡ್ಕರ್ ಜಯಂತಿಯ ಅಂಗವಾಗಿ
+        ಕೆಳಗಿನ ರೀತಿಯ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು
+        ಆಯೋಜಿಸಬಹುದು.
+
+    </p>
+
+
+    <div class="program-list">
+
+        <div class="program-item">
+
+            🕯️
+            ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ
+            ಪುಷ್ಪ ನಮನ
+
+        </div>
+
+
+        <div class="program-item">
+
+            🎤
+            ಅಂಬೇಡ್ಕರ್ ಅವರ ಜೀವನ ಮತ್ತು
+            ಸಾಧನೆಗಳ ಕುರಿತು ವಿಶೇಷ ಭಾಷಣ
+
+        </div>
+
+
+        <div class="program-item">
+
+            📖
+            ಸಂವಿಧಾನ ಮತ್ತು ನಾಗರಿಕ ಹಕ್ಕುಗಳ
+            ಕುರಿತು ಜಾಗೃತಿ ಕಾರ್ಯಕ್ರಮ
+
+        </div>
+
+
+        <div class="program-item">
+
+            🎭
+            ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು
+
+        </div>
+
+
+        <div class="program-item">
+
+            🏆
+            ವಿಶೇಷ ಗೌರವ ಮತ್ತು ಸನ್ಮಾನ ಕಾರ್ಯಕ್ರಮ
+
+        </div>
+
+
+        <div class="program-item">
+
+            🇮🇳
+            ಸಂವಿಧಾನಿಕ ಮೌಲ್ಯಗಳ ಕುರಿತು
+            ಜಾಗೃತಿ ಸಂದೇಶ
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WELCOME
+========================= -->
+
+<section class="welcome">
+
+    <h2>
+        ಎಲ್ಲರಿಗೂ ಆತ್ಮೀಯ ಸ್ವಾಗತ!
     </h2>
 
     <p>
-        Your fitness journey starts today.
+
+        ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರ
+        ಜನ್ಮದಿನದ ಅಂಗವಾಗಿ ನಡೆಯುವ
+        ಈ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಸಾರ್ವಜನಿಕರು,
+        ವಿದ್ಯಾರ್ಥಿಗಳು, ಯುವಕರು ಮತ್ತು
+        ಕುಟುಂಬ ಸಮೇತರಾಗಿ ಭಾಗವಹಿಸಲು
+        ಆತ್ಮೀಯವಾಗಿ ಆಹ್ವಾನಿಸುತ್ತೇವೆ.
+
+        <br><br>
+
+        <strong>
+            "ಶಿಕ್ಷಣ • ಸಮಾನತೆ • ಸ್ವಾತಂತ್ರ್ಯ • ನ್ಯಾಯ"
+        </strong>
+
     </p>
 
     <a
-        href="https://wa.me/918088285367"
-        class="cta-btn"
+        href="#event"
+        class="welcome-button"
     >
-        📲 BOOK A FREE TRIAL
+        ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಬನ್ನಿ
     </a>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
     <h3>
-        SHREYAS FITNESS
+        Dr. B. R. Ambedkar Jayanti 2026
     </h3>
 
     <p>
-        Train Hard • Stay Strong • Live Better
+        14 ಏಪ್ರಿಲ್ 2026
     </p>
 
     <p>
-        📍 Bengaluru, Karnataka
+        ಕರ್ನಾಟಕ
     </p>
 
     <p>
-        📞 +91 80882 85367
+        ಶಿಕ್ಷಣ • ಸಮಾನತೆ • ಸಾಮಾಜಿಕ ನ್ಯಾಯ • ಸಂವಿಧಾನಿಕ ಮೌಲ್ಯಗಳು
     </p>
 
     <p>
-        © 2026 Shreyas Fitness. All Rights Reserved.
+        © 2026 Ambedkar Jayanti Programme
     </p>
 
 </footer>
